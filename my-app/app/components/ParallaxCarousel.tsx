@@ -6,16 +6,26 @@ import { LiquidGlassButton } from "./LiquidGlassButton";
 
 export function ParallaxCarousel() {
   const [scrollY, setScrollY] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
+    const updateSize = () => {
+      setIsMobile(window.innerWidth <= 450);
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", updateSize);
+
+    updateSize(); // set initial state
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", updateSize);
+    };
   }, []);
 
-  // Card configurations - middle card (index 2) is smallest, outer cards are largest
-  const cardConfigs = [
-    // Far left card (largest)
+  const cardConfigsDesktop = [
     {
       width: "w-52",
       height: "h-80",
@@ -23,36 +33,32 @@ export function ParallaxCarousel() {
       zIndex: "z-10",
       hasButton: true,
       buttonRotation: "rotate-180",
-      parallaxMultiplier: 0.12, // Most movement
+      parallaxMultiplier: 0.12,
     },
-    // Left card
     {
       width: "w-48",
       height: "h-72",
       baseTransform: "scale(0.95) translateY(-10px)",
       zIndex: "z-20",
       hasButton: false,
-      parallaxMultiplier: 0.08, // Medium movement
+      parallaxMultiplier: 0.08,
     },
-    // Center card (smallest)
     {
       width: "w-40",
       height: "h-60",
       baseTransform: "scale(0.85)",
       zIndex: "z-30",
       hasButton: false,
-      parallaxMultiplier: 0.04, // Minimal movement
+      parallaxMultiplier: 0.04,
     },
-    // Right card
     {
       width: "w-48",
       height: "h-72",
       baseTransform: "scale(0.95) translateY(-10px)",
       zIndex: "z-20",
       hasButton: false,
-      parallaxMultiplier: 0.08, // Medium movement
+      parallaxMultiplier: 0.08,
     },
-    // Far right card (largest)
     {
       width: "w-52",
       height: "h-80",
@@ -60,12 +66,43 @@ export function ParallaxCarousel() {
       zIndex: "z-10",
       hasButton: true,
       buttonRotation: "",
-      parallaxMultiplier: 0.12, // Most movement
+      parallaxMultiplier: 0.12,
     },
   ];
 
+  const cardConfigsMobile = [
+    {
+      width: "w-28",
+      height: "h-48",
+      baseTransform: "scale(0.95) translateY(-10px) translateX(-20px)",
+      zIndex: "z-20",
+      hasButton: true,
+      buttonRotation: "rotate-180",
+      parallaxMultiplier: 0.1,
+    },
+    {
+      width: "w-24",
+      height: "h-40",
+      baseTransform: "scale(0.85) translateY(10px)",
+      zIndex: "z-10",
+      hasButton: false,
+      parallaxMultiplier: 0.05,
+    },
+    {
+      width: "w-28",
+      height: "h-48",
+      baseTransform: "scale(0.95) translateY(-10px) translateX(20px)",
+      zIndex: "z-20",
+      hasButton: true,
+      buttonRotation: "",
+      parallaxMultiplier: 0.1,
+    },
+  ];
+
+  const cardConfigs = isMobile ? cardConfigsMobile : cardConfigsDesktop;
+
   return (
-    <div className="relative flex justify-center items-center px-4 max-w-7xl mx-auto mb-16 min-h-[400px] overflow-visible">
+    <div className="relative flex justify-center items-center px-4 max-w-7xl mx-auto mb-16 min-h-[300px] overflow-visible">
       <div
         className="flex justify-center items-center gap-1"
         style={{
@@ -93,9 +130,9 @@ export function ParallaxCarousel() {
                 transition: "transform 0.3s ease-out",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = `${
-                  config.baseTransform
-                } translateY(${parallaxY - 8}px) scale(1.05)`;
+                e.currentTarget.style.transform = `${config.baseTransform} translateY(${
+                  parallaxY - 8
+                }px) scale(1.05)`;
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = `${config.baseTransform} translateY(${parallaxY}px)`;
