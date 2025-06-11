@@ -9,7 +9,7 @@ export function Navbar() {
 
   return (
     <nav className="bg-transparent z-50 relative">
-      <div className="max-w-7xl mx-auto px-4 py-4">
+      <div className="max-w-7xl mx-auto px-4 py-2"> {/* py-4 → py-2 */}
         {/* Top Bar */}
         <div className="w-full flex items-center justify-between">
           {/* Logo */}
@@ -28,22 +28,14 @@ export function Navbar() {
 
           {/* Links - Desktop Only */}
           <div className="hidden md:flex flex-wrap justify-center gap-6 text-sm md:text-base font-bold">
-            <a href="#contact" className="hover:text-primary transition">
-              Contact
-            </a>
-            <a href="#services" className="hover:text-primary transition">
-              Services
-            </a>
-            <a href="#shop" className="hover:text-primary transition">
-              Shop
-            </a>
-            <a href="#about" className="hover:text-primary transition">
-              About
-            </a>
+            <a href="#contact" className="hover:text-primary transition">Contact</a>
+            <a href="#services" className="hover:text-primary transition">Services</a>
+            <a href="#shop" className="hover:text-primary transition">Shop</a>
+            <a href="#about" className="hover:text-primary transition">About</a>
           </div>
         </div>
 
-        {/* Mobile Menu - Slide Down */}
+        {/* Mobile Menu */}
         <div
           className={`
             md:hidden overflow-hidden transition-all duration-300 ease-in-out
@@ -51,23 +43,15 @@ export function Navbar() {
           `}
         >
           <div className="flex flex-col items-center gap-4 text-sm font-bold">
-            <a href="#contact" className="hover:text-primary transition">
-              Contact
-            </a>
-            <a href="#services" className="hover:text-primary transition">
-              Services
-            </a>
-            <a href="#shop" className="hover:text-primary transition">
-              Shop
-            </a>
-            <a href="#about" className="hover:text-primary transition">
-              About
-            </a>
+            <a href="#contact" className="hover:text-primary transition">Contact</a>
+            <a href="#services" className="hover:text-primary transition">Services</a>
+            <a href="#shop" className="hover:text-primary transition">Shop</a>
+            <a href="#about" className="hover:text-primary transition">About</a>
           </div>
         </div>
 
-        {/* Centered Badge Message */}
-        <div className="mt-6 flex justify-center">
+        {/* Badge */}
+        <div className="mt-3 mb-2 flex justify-center"> {/* mt-6 → mt-3, added mb-2 */}
           <LiquidGlassBadge variant="primary" size="md">
             AGENȚIA CREATIVĂ BANDI MEDIA
           </LiquidGlassBadge>
