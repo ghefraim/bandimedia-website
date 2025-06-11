@@ -1,5 +1,6 @@
 import { LiquidGlassButton } from "./LiquidGlassButton";
 import { ParallaxCarousel } from "./ParallaxCarousel";
+import Link from "next/link"; 
 
 export default function HeroSection() {
   return (
@@ -16,7 +17,9 @@ export default function HeroSection() {
       <ParallaxCarousel />
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-4 px-4">
-        <LiquidGlassButton variant="primary">Contactează-ne</LiquidGlassButton>
+        <Link href="/contact" className="w-full md:w-auto">
+          <LiquidGlassButton variant="primary">Contactează-ne</LiquidGlassButton>
+        </Link>
         <LiquidGlassButton variant="secondary" icon>
           Vezi proiectele noastre
         </LiquidGlassButton>

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { LiquidGlassBadge } from "./LiquidGlassBadge";
@@ -28,7 +29,7 @@ export function Navbar() {
 
           {/* Links - Desktop Only */}
           <div className="hidden md:flex flex-wrap justify-center gap-6 text-sm md:text-base font-bold">
-            <a href="#contact" className="hover:text-primary transition">Contact</a>
+            <Link href="/contact" className="hover:text-primary transition">Contact</Link>
             <a href="#services" className="hover:text-primary transition">Services</a>
             <a href="#shop" className="hover:text-primary transition">Shop</a>
             <a href="#about" className="hover:text-primary transition">About</a>
@@ -43,7 +44,7 @@ export function Navbar() {
           `}
         >
           <div className="flex flex-col items-center gap-4 text-sm font-bold">
-            <a href="#contact" className="hover:text-primary transition">Contact</a>
+            <Link href="/contact" className="hover:text-primary transition">Contact</Link>
             <a href="#services" className="hover:text-primary transition">Services</a>
             <a href="#shop" className="hover:text-primary transition">Shop</a>
             <a href="#about" className="hover:text-primary transition">About</a>

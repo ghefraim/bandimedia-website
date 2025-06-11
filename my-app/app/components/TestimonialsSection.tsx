@@ -1,4 +1,5 @@
 import { LiquidGlassButton } from "./LiquidGlassButton";
+import Link from "next/link";
 
 const testimonials = [
   { name: "Beni Strava", company: "@ AB Hibrid Electric" },
@@ -46,7 +47,12 @@ export default function TestimonialsSection() {
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <LiquidGlassButton variant="primary">Contactează-ne</LiquidGlassButton>
+          {/* ✅ Învelim butonul în Link */}
+          <Link href="/contact">
+            <LiquidGlassButton variant="primary">
+              Contactează-ne
+            </LiquidGlassButton>
+          </Link>
         </div>
       </div>
     </section>
