@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { LiquidGlassCard } from "./LiquidGlassCard";
 import { LiquidGlassButton } from "./LiquidGlassButton";
+import Link from "next/link";
 
 const services = [
   { title: "Video Production", description: "High-quality video content from concepts to final edits." },
@@ -46,9 +47,11 @@ export default function ServicesSection() {
       </div>
 
       <div className="text-center mt-12 px-4">
-        <LiquidGlassButton variant="secondary" icon>
-          Contactează-ne
-        </LiquidGlassButton>
+        <Link href="/contact" className="inline-block">
+          <LiquidGlassButton variant="secondary" icon>
+            Contactează-ne
+          </LiquidGlassButton>
+        </Link>
       </div>
     </section>
   );
