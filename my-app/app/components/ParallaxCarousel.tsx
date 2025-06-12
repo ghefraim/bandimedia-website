@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { ChevronRight } from "lucide-react";
 import { LiquidGlassButton } from "./LiquidGlassButton";
 
 export function ParallaxCarousel() {
   const [scrollY, setScrollY] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const videoRefs = useRef<(HTMLIFrameElement | null)[]>([]);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -24,6 +25,30 @@ export function ParallaxCarousel() {
       window.removeEventListener("resize", updateSize);
     };
   }, []);
+
+  // Function to handle video messages
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      if (event.data.event === 'onStateChange') {
+        // Find the center video index
+        const centerIndex = isMobile ? 1 : 2;
+        
+        // Mute all videos except the center one
+        videoRefs.current.forEach((ref, index) => {
+          if (ref) {
+            ref.contentWindow?.postMessage(JSON.stringify({
+              event: 'command',
+              func: 'setVolume',
+              args: [index === centerIndex ? 100 : 0]
+            }), '*');
+          }
+        });
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, [isMobile]);
 
   const cardConfigsDesktop = [
     {
@@ -44,7 +69,7 @@ export function ParallaxCarousel() {
       hasButton: false,
       parallaxMultiplier: 0.08,
       hasVideo: true,
-      videoId: "VIDEO_ID_1", // Replace with actual YouTube Shorts video ID
+      videoId: "tFhFfsebkys",
     },
     {
       width: "w-40",
@@ -54,7 +79,7 @@ export function ParallaxCarousel() {
       hasButton: false,
       parallaxMultiplier: 0.04,
       hasVideo: true,
-      videoId: "VIDEO_ID_2", // Replace with actual YouTube Shorts video ID
+      videoId: "iFVxV-GFgTk",
     },
     {
       width: "w-48",
@@ -64,7 +89,7 @@ export function ParallaxCarousel() {
       hasButton: false,
       parallaxMultiplier: 0.08,
       hasVideo: true,
-      videoId: "VIDEO_ID_3", // Replace with actual YouTube Shorts video ID
+      videoId: "O1Z1WNM1eWI",
     },
     {
       width: "w-52",
@@ -97,7 +122,7 @@ export function ParallaxCarousel() {
       hasButton: false,
       parallaxMultiplier: 0.05,
       hasVideo: true,
-      videoId: "VIDEO_ID_1", // Replace with actual YouTube Shorts video ID
+      videoId: "tFhFfsebkys",
     },
     {
       width: "w-32",
@@ -124,6 +149,7 @@ export function ParallaxCarousel() {
       >
         {cardConfigs.map((config, index) => {
           const parallaxY = scrollY * config.parallaxMultiplier;
+          const isCenterVideo = config.hasVideo && ((isMobile && index === 1) || (!isMobile && index === 2));
 
           return (
             <div
@@ -157,7 +183,10 @@ export function ParallaxCarousel() {
               ) : config.hasVideo ? (
                 <div className="w-full h-full relative">
                   <iframe
-                    src={`https://www.youtube.com/embed/${config.videoId}`}
+                    ref={(el) => {
+                      videoRefs.current[index] = el;
+                    }}
+                    src={`https://www.youtube.com/embed/${config.videoId}?autoplay=1&mute=${!isCenterVideo}&loop=1&playlist=${config.videoId}&controls=0&showinfo=0&rel=0&modestbranding=1&enablejsapi=1`}
                     title="YouTube Shorts"
                     className="absolute inset-0 w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
