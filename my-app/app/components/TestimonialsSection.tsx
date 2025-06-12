@@ -32,8 +32,7 @@ export default function TestimonialsSection() {
           Uite ce Spun Clienții Noștri
         </h2>
         <p className="text-center text-base sm:text-lg text-white/80 mb-12 max-w-2xl mx-auto">
-          We treat every client the same but different at the same time,
-          tailoring strategies to each business.
+          Tratăm fiecare client cu aceeași seriozitate, dar într-un mod personalizat, adaptând strategiile în funcție de afacerea fiecăruia.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 w-full max-w-6xl">
