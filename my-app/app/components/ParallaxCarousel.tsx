@@ -34,6 +34,7 @@ export function ParallaxCarousel() {
       hasButton: true,
       buttonRotation: "rotate-180",
       parallaxMultiplier: 0.12,
+      hasVideo: false,
     },
     {
       width: "w-48",
@@ -42,6 +43,8 @@ export function ParallaxCarousel() {
       zIndex: "z-20",
       hasButton: false,
       parallaxMultiplier: 0.08,
+      hasVideo: true,
+      videoId: "VIDEO_ID_1", // Replace with actual YouTube Shorts video ID
     },
     {
       width: "w-40",
@@ -50,6 +53,8 @@ export function ParallaxCarousel() {
       zIndex: "z-30",
       hasButton: false,
       parallaxMultiplier: 0.04,
+      hasVideo: true,
+      videoId: "VIDEO_ID_2", // Replace with actual YouTube Shorts video ID
     },
     {
       width: "w-48",
@@ -58,6 +63,8 @@ export function ParallaxCarousel() {
       zIndex: "z-20",
       hasButton: false,
       parallaxMultiplier: 0.08,
+      hasVideo: true,
+      videoId: "VIDEO_ID_3", // Replace with actual YouTube Shorts video ID
     },
     {
       width: "w-52",
@@ -67,6 +74,7 @@ export function ParallaxCarousel() {
       hasButton: true,
       buttonRotation: "",
       parallaxMultiplier: 0.12,
+      hasVideo: false,
     },
   ];
 
@@ -79,6 +87,7 @@ export function ParallaxCarousel() {
       hasButton: true,
       buttonRotation: "rotate-180",
       parallaxMultiplier: 0.1,
+      hasVideo: false,
     },
     {
       width: "w-28",
@@ -87,6 +96,8 @@ export function ParallaxCarousel() {
       zIndex: "z-10",
       hasButton: false,
       parallaxMultiplier: 0.05,
+      hasVideo: true,
+      videoId: "VIDEO_ID_1", // Replace with actual YouTube Shorts video ID
     },
     {
       width: "w-32",
@@ -96,6 +107,7 @@ export function ParallaxCarousel() {
       hasButton: true,
       buttonRotation: "",
       parallaxMultiplier: 0.1,
+      hasVideo: false,
     },
   ];
 
@@ -118,7 +130,7 @@ export function ParallaxCarousel() {
               key={index}
               className={`
                 ${config.width} ${config.height}
-                bg-gray-300 rounded-2xl
+                bg-gray-300 rounded-2xl overflow-hidden
                 ${config.zIndex}
                 hover:shadow-2xl
                 cursor-pointer
@@ -138,11 +150,21 @@ export function ParallaxCarousel() {
                 e.currentTarget.style.transform = `${config.baseTransform} translateY(${parallaxY}px)`;
               }}
             >
-              {config.hasButton && (
+              {config.hasButton ? (
                 <LiquidGlassButton variant="primary">
                   <ChevronRight size={24} className={config.buttonRotation} />
                 </LiquidGlassButton>
-              )}
+              ) : config.hasVideo ? (
+                <div className="w-full h-full relative">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${config.videoId}`}
+                    title="YouTube Shorts"
+                    className="absolute inset-0 w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              ) : null}
             </div>
           );
         })}
