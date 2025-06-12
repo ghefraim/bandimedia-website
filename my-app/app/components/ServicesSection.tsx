@@ -4,12 +4,12 @@ import { LiquidGlassButton } from "./LiquidGlassButton";
 import Link from "next/link";
 
 const services = [
-  { title: "Video Production", description: "High-quality video content from concepts to final edits." },
-  { title: "Photography", description: "Stunning visuals that capture your brand's essence." },
-  { title: "Social Media", description: "Strategic management and content creation for social platforms." },
-  { title: "Copywriting", description: "Compelling words that tell your story and drive action." },
-  { title: "Graphic Design", description: "Visual identity and marketing materials that make you stand out." },
-  { title: "Website Development", description: "Custom websites that are beautiful, functional, and user-friendly." },
+  { title: "Video Production", description: "Conținut video de înaltă calitate, de la concept până la montajul final." },
+  { title: "Photography", description: "Imagini spectaculoase care surprind esența brandului tău." },
+  { title: "Social Media", description: "Management strategic și creare de conținut pentru platformele sociale." },
+  { title: "Copywriting", description: "Texte convingătoare care spun povestea ta și generează acțiune." },
+  { title: "Graphic Design", description: "Identitate vizuală și materiale de marketing care te diferențiază." },
+  { title: "Website Development", description: "Site-uri web personalizate, frumoase, funcționale și ușor de utilizat." },
 ];
 
 export default function ServicesSection() {
@@ -31,7 +31,7 @@ export default function ServicesSection() {
         Soluții Creative Pentru Orice Nevoi
       </h1>
       <p className="text-xl text-white/80 max-w-2xl mx-auto mb-12 text-center">
-        We offer a comprehensive range of services to help your brand stand out in today&apos;s crowded digital landscape.
+        Oferim o gamă completă de servicii pentru a ajuta brandul tău să iasă în evidență în peisajul digital aglomerat de astăzi.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">

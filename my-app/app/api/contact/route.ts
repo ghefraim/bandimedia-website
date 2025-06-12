@@ -8,10 +8,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ message: 'Only POST requests allowed' });
   }
 
-  const { name, email, message } = req.body;
+  const { name, email, phone, message } = req.body;
 
   if (!name || !email || !message) {
-    return res.status(400).json({ message: 'Please fill all fields' });
+    return res.status(400).json({ message: 'Please fill all required fields' });
   }
 
   try {
@@ -22,6 +22,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       html: `
         <p><strong>Nume:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ''}
         <p><strong>Mesaj:</strong></p>
         <p>${message}</p>
       `,
