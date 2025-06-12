@@ -3,13 +3,13 @@ import { LiquidGlassButton } from "./LiquidGlassButton";
 const products = [
   {
     title: "Bandi Presets Pro",
-    description: "20 presets to make any photo look original and stylish",
+    description: "20 de presetări care oferă oricărei fotografii un aspect original și stilizat",
     price: "$14.99",
     image: "/presets1.png",
   },
   {
-    title: "We do NOT belong in the Comfort Zone",
-    description: "Wear our vision with our Premium clothing line.",
+    title: "Nu aparținem Zonei de Confort",
+    description: "Poartă viziunea noastră prin linia noastră vestimentară premium.",
     price: "$24.99",
     image: "/Tshirt1.png",
   },

@@ -3,24 +3,24 @@ import { LiquidGlassBlogCard }from "./LiquidGlassBlogCard";
 
 const blogPosts = [
   {
-    title: "10 Social Media Trends to Watch in 2025",
-    description: "Discover the latest social media trends that are shaping the digital landscape this year.",
+    title: "10 Tendințe în Social Media de Urmărit în 2025",
+    description: "Descoperă cele mai noi tendințe din social media care modelează peisajul digital în acest an.",
     category: "Social Media",
-    date: "May 10, 2025",
+    date: "10 Mai 2025",
     author: "Paul Bandi",
   },
   {
-    title: "The Art of Visual Storytelling in Brand Marketing",
-    description: "Learn how visual storytelling can elevate your brand and connect with your audience on a deeper level.",
+    title: "Arta Povestirii Vizuale în Marketingul de Brand",
+    description: "Află cum povestirea vizuală poate ridica nivelul brandului tău și crea o conexiune mai profundă cu publicul.",
     category: "Branding",
-    date: "April 22, 2025",
+    date: "22 Aprilie 2025",
     author: "Filip Bonce",
   },
   {
-    title: "Web Design Principles That Boost Conversion Rates",
-    description: "Explore the key web design principles that can help increase your website's conversion rates.",
+    title: "Principii de Web Design Care Cresc Rata de Conversie",
+    description: "Explorează principiile esențiale de design web care pot crește rata de conversie a site-ului tău.",
     category: "Web Design",
-    date: "April 5, 2025",
+    date: "5 Aprilie 2025",
     author: "Efraim Ghiurau",
   },
 ];
@@ -34,7 +34,7 @@ export default function BlogSection() {
         </LiquidGlassBadge>
         <h2 className="text-4xl font-semibold mt-4 mb-4">Despre industrie & Inspirație</h2>
         <p className="text-xl text-white/80 max-w-2xl mx-auto">
-          Explore our collection of articles on design, marketing, and creative strategy.
+          Descoperă colecția noastră de articole despre design, marketing și strategie creativă.
         </p>
       </div>
 
