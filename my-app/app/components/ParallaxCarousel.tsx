@@ -11,7 +11,7 @@ export function ParallaxCarousel() {
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     const updateSize = () => {
-      setIsMobile(window.innerWidth <= 450);
+      setIsMobile(window.innerWidth <= 768);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -72,26 +72,26 @@ export function ParallaxCarousel() {
 
   const cardConfigsMobile = [
     {
-      width: "w-28",
-      height: "h-48",
-      baseTransform: "scale(0.95) translateY(-10px) translateX(-20px)",
+      width: "w-32",
+      height: "h-56",
+      baseTransform: "scale(0.95) translateY(-10px) translateX(-15px)",
       zIndex: "z-20",
       hasButton: true,
       buttonRotation: "rotate-180",
       parallaxMultiplier: 0.1,
     },
     {
-      width: "w-24",
-      height: "h-40",
+      width: "w-28",
+      height: "h-48",
       baseTransform: "scale(0.85) translateY(10px)",
       zIndex: "z-10",
       hasButton: false,
       parallaxMultiplier: 0.05,
     },
     {
-      width: "w-28",
-      height: "h-48",
-      baseTransform: "scale(0.95) translateY(-10px) translateX(20px)",
+      width: "w-32",
+      height: "h-56",
+      baseTransform: "scale(0.95) translateY(-10px) translateX(15px)",
       zIndex: "z-20",
       hasButton: true,
       buttonRotation: "",
