@@ -27,12 +27,12 @@ const blogPosts = [
 
 export default function BlogSection() {
   return (
-    <section id="blog" className="py-20 px-4">
-      <div className="text-center mb-12">
+    <section id="blog" className="py-10 px-4">
+      <div className="text-center mb-10">
         <LiquidGlassBadge variant="primary" size="md">
           OUR BLOG
         </LiquidGlassBadge>
-        <h2 className="text-4xl font-semibold mt-4 mb-4">Despre industrie & Inspirație</h2>
+        <h2 className="text-4xl font-semibold mt-4 mb-2">Despre industrie & Inspirație</h2>
         <p className="text-xl text-white/80 max-w-2xl mx-auto">
           Descoperă colecția noastră de articole despre design, marketing și strategie creativă.
         </p>

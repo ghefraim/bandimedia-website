@@ -17,11 +17,11 @@ const products = [
 
 export default function ShopSection() {
   return (
-    <section id="shop" className="py-16 px-4 text-center">
+    <section id="shop" className="py-10 px-4 text-center">
       <h2 className="text-2xl md:text-3xl font-medium mb-2">
         Cumpără și poartă viziunea noastră
       </h2>
-      <h1 className="text-4xl md:text-5xl font-bold mb-12">Bandi Media Shop</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mb-8">Bandi Media Shop</h1>
 
       <div className="flex flex-wrap justify-center items-stretch gap-10 max-w-6xl mx-auto">
         {products.map(({ title, description, price, image }, idx) => (
