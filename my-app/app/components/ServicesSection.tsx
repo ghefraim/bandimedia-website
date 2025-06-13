@@ -14,8 +14,8 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-20 px-4">
-      <div className="flex justify-center mb-16">
+    <section id="services" className="py-10 px-4">
+      <div className="flex justify-center mb-8">
         <div className="w-full max-w-5xl h-48 md:h-60 rounded-md overflow-hidden">
           <Image
             src="/under-hero.png"
@@ -27,10 +27,10 @@ export default function ServicesSection() {
         </div>
       </div>
 
-      <h1 className="text-center text-5xl md:text-6xl font-extrabold mb-12">
+      <h1 className="text-center text-5xl md:text-6xl font-extrabold mb-10">
         Soluții Creative Pentru Orice Nevoi
       </h1>
-      <p className="text-xl text-white/80 max-w-2xl mx-auto mb-12 text-center">
+      <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10 text-center">
         Oferim o gamă completă de servicii pentru a ajuta brandul tău să iasă în evidență în peisajul digital aglomerat de astăzi.
       </p>
 

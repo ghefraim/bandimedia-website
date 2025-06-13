@@ -54,7 +54,7 @@ export function Navbar() {
         </div>
 
         {/* Badge */}
-        <div className="mt-3 mb-2 flex justify-center">
+        <div className="mt-1 mb-2 flex justify-center">
           <LiquidGlassBadge variant="primary" size="md">
             AGENȚIA CREATIVĂ BANDI MEDIA
           </LiquidGlassBadge>

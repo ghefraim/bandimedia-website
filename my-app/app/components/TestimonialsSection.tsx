@@ -26,12 +26,12 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section id="testimonials" className="py-20 px-4">
+    <section id="testimonials" className="py-10 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-2">
           Uite ce Spun Clienții Noștri
         </h2>
-        <p className="text-center text-base sm:text-lg text-white/80 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-base sm:text-lg text-white/80 mb-6 max-w-2xl mx-auto">
           Tratăm fiecare client cu aceeași seriozitate, dar într-un mod personalizat, adaptând strategiile în funcție de afacerea fiecăruia.
         </p>
 

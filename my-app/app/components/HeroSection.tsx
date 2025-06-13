@@ -5,12 +5,12 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="text-center pt-10 pb-16 relative"> {/* py-16 → pt-10 pb-16 */}
-      <h1 className="text-3xl md:text-6xl font-bold leading-relaxed md:leading-tight mb-4 max-w-[90%] md:max-w-4xl mx-auto">
+      <h1 className="text-3xl md:text-6xl font-bold leading-relaxed md:leading-tight mb-2 max-w-[90%] md:max-w-4xl mx-auto">
         Spunem povești ce nu{" "}
         <br className="hidden md:inline" />
         pot fi trecute cu vederea
       </h1>
-      <p className="text-base md:text-xl text-gray-200 mb-10">
+      <p className="text-base md:text-xl text-gray-200 mb-2">
         Ne place esteticul, ne dorim succesul tău.
       </p>
 

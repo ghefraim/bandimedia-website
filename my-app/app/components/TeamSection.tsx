@@ -12,12 +12,12 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section id="team" className="py-20 px-4">
+    <section id="team" className="py-10 px-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center font-semibold text-2xl md:text-3xl mb-2">
           Echipa care face
         </h2>
-        <h3 className="text-center text-5xl md:text-6xl font-extrabold mb-12">
+        <h3 className="text-center text-5xl md:text-6xl font-extrabold mb-6">
           Totul Posibil
         </h3>
 
