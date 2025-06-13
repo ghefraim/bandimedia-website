@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { ContactForm } from "../components/ContactForm";
-import { Navbar } from "../components/Navbar";
+import { Navbar } from "../components/Navbar"; // ajustează calea dacă e diferită
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen">
+    <div className="bg-gradient-to-b from-[#0d3a26] via-[#124d34] to-[#0d3a26] min-h-screen">
       <Navbar />
 
       <section className="py-24 px-4">
