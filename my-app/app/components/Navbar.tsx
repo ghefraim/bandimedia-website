@@ -31,10 +31,18 @@ export function Navbar() {
 
           {/* Links - Desktop Only */}
           <div className="hidden md:flex flex-wrap justify-center gap-6 text-sm md:text-base font-bold">
-            <Link href="/contact" className="hover:text-primary transition">Contact</Link>
-            <a href="/#services" className="hover:text-primary transition">Services</a>
-            <a href="/#shop" className="hover:text-primary transition">Shop</a>
-            <a href="/#about" className="hover:text-primary transition">About</a>
+            <Link href="/contact" className="hover:text-primary transition">
+              Contact
+            </Link>
+            <Link href="/#services" className="hover:text-primary transition">
+              Services
+            </Link>
+            <Link href="/#shop" className="hover:text-primary transition">
+              Shop
+            </Link>
+            <Link href="/#about" className="hover:text-primary transition">
+              About
+            </Link>
           </div>
         </div>
 
@@ -42,14 +50,34 @@ export function Navbar() {
         <div
           className={`
             md:hidden overflow-hidden transition-all duration-300 ease-in-out
-            ${menuOpen ? "max-h-60 mt-4" : "max-h-0"}
+            ${menuOpen ? "max-h-60 my-10" : "max-h-0"}
           `}
         >
-          <div className="flex flex-col items-center gap-4 text-sm font-bold">
-            <Link href="/contact" className="hover:text-primary transition">Contact</Link>
-            <a href="/#services" className="hover:text-primary transition">Services</a>
-            <a href="/#shop" className="hover:text-primary transition">Shop</a>
-            <a href="/#about" className="hover:text-primary transition">About</a>
+          <div className="flex flex-col items-center gap-2 text-lg font-bold">
+            <Link
+              href="/contact"
+              className="hover:text-primary transition min-w-36 text-center py-2"
+            >
+              Contact
+            </Link>
+            <Link
+              href="/#services"
+              className="hover:text-primary transition min-w-52 text-center py-2"
+            >
+              Services
+            </Link>
+            <Link
+              href="/#shop"
+              className="hover:text-primary transition min-w-52 text-center py-2"
+            >
+              Shop
+            </Link>
+            <Link
+              href="/#about"
+              className="hover:text-primary transition min-w-52 text-center py-2"
+            >
+              About
+            </Link>
           </div>
         </div>
 
