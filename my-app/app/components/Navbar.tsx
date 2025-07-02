@@ -15,7 +15,7 @@ export function Navbar() {
         <div className="w-full flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="hover:opacity-90 transition-opacity">
-            <Image src="/logo.png" alt="Logo" width={80} height={80} />
+            <Image src="/logo.png" alt="Logo" width={140} height={140} />
           </Link>
 
           {/* Hamburger Icon - Mobile Only */}
@@ -35,13 +35,13 @@ export function Navbar() {
               Contact
             </Link>
             <Link href="/#services" className="hover:text-primary transition">
-              Services
+              Servicii
             </Link>
             <Link href="/#shop" className="hover:text-primary transition">
-              Shop
+              Magazin
             </Link>
             <Link href="/#about" className="hover:text-primary transition">
-              About
+              Despre
             </Link>
           </div>
         </div>
@@ -64,19 +64,19 @@ export function Navbar() {
               href="/#services"
               className="hover:text-primary transition min-w-52 text-center py-2"
             >
-              Services
+              Servicii
             </Link>
             <Link
               href="/#shop"
               className="hover:text-primary transition min-w-52 text-center py-2"
             >
-              Shop
+              Magazin
             </Link>
             <Link
               href="/#about"
               className="hover:text-primary transition min-w-52 text-center py-2"
             >
-              About
+              Despre
             </Link>
           </div>
         </div>

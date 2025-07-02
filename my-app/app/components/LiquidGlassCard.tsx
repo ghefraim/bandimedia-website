@@ -26,11 +26,10 @@ export const LiquidGlassCard: React.FC<LiquidGlassCardProps> = ({
 
   const variantClasses = {
     primary: `
-      bg-gradient-to-br from-[#5BA77A] via-[#4A9B6B] to-[#3D8A5A]
-      border-[#5BA77A]/40 text-white
-      shadow-[0_4px_16px_0_rgba(91,167,122,0.3)]
-      hover:shadow-[0_8px_24px_0_rgba(91,167,122,0.4)]
-      hover:border-[#5BA77A]/60
+      bg-transparent
+      border-white/30 text-white
+      hover:scale-[1.02] hover:-translate-y-1
+      transition duration-300 ease-in-out
     `,
     secondary: `
       bg-gradient-to-br from-white/20 via-white/15 to-white/10

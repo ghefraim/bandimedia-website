@@ -85,7 +85,7 @@ export const LiquidGlassBlogCard: React.FC<LiquidGlassBlogCardProps> = ({
                          font-semibold text-sm transition-colors group-hover:gap-3 
                          transition-all duration-200"
             >
-              Read more
+              Citește mai multe 
               <ArrowRight
                 size={16}
                 className="transition-transform group-hover:translate-x-1"

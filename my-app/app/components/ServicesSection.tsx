@@ -4,12 +4,12 @@ import { LiquidGlassButton } from "./LiquidGlassButton";
 import Link from "next/link";
 
 const services = [
-  { title: "Video Production", description: "Conținut video de înaltă calitate, de la concept până la montajul final." },
-  { title: "Photography", description: "Imagini spectaculoase care surprind esența brandului tău." },
+  { title: "Producție Video", description: "Conținut video de înaltă calitate, de la concept până la montajul final." },
+  { title: "Fotografie", description: "Imagini spectaculoase care surprind esența brandului tău." },
   { title: "Social Media", description: "Management strategic și creare de conținut pentru platformele sociale." },
   { title: "Copywriting", description: "Texte convingătoare care spun povestea ta și generează acțiune." },
-  { title: "Graphic Design", description: "Identitate vizuală și materiale de marketing care te diferențiază." },
-  { title: "Website Development", description: "Site-uri web personalizate, frumoase, funcționale și ușor de utilizat." },
+  { title: "Design Grafic", description: "Identitate vizuală și materiale de marketing care te diferențiază." },
+  { title: "Dezvoltare site-uri Web", description: "Site-uri web personalizate, frumoase, funcționale și ușor de utilizat." },
 ];
 
 export default function ServicesSection() {

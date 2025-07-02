@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="text-center pt-10 pb-16 relative"> {/* py-16 → pt-10 pb-16 */}
       <h1 className="text-3xl md:text-6xl font-bold leading-relaxed md:leading-tight mb-2 max-w-[90%] md:max-w-4xl mx-auto">
-        Spunem povești ce nu{" "}
+        Spunem povești care nu{" "}
         <br className="hidden md:inline" />
         pot fi trecute cu vederea
       </h1>

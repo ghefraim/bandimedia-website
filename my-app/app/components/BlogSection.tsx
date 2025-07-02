@@ -30,7 +30,7 @@ export default function BlogSection() {
     <section id="blog" className="py-10 px-4">
       <div className="text-center mb-10">
         <LiquidGlassBadge variant="primary" size="md">
-          OUR BLOG
+          BLOGUL NOSTRU
         </LiquidGlassBadge>
         <h2 className="text-4xl font-semibold mt-4 mb-2">Despre industrie & Inspirație</h2>
         <p className="text-xl text-white/80 max-w-2xl mx-auto">

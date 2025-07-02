@@ -2,12 +2,12 @@ import { LiquidGlassTeamCard } from "./LiquidGlassTeamCard";
 
 const teamMembers = [
   { name: "Katiana Exemplu", role: "Social Media Manager" },
-  { name: "Filip Bonce", role: "Graphic Designer & Photographer" },
-  { name: "Paul Bandi", role: "Founder & CEO" },
-  { name: "Daria Voichescu", role: "Copywriter & Strategist" },
-  { name: "Denis Ursuț", role: "Videographer & Video Editor" },
-  { name: "Efraim Ghiurau", role: "Website Developer" },
-  { name: "Numaiștiu Numele", role: "Marketing & Ads Expert" },
+  { name: "Filip Bonce", role: "Designer Grafic & Fotograf" },
+  { name: "Paul Bandi", role: "Fondator & CEO" },
+  { name: "Daria Voichescu", role: "Copywriter & Strateg" },
+  { name: "Denis Ursuț", role: "Videograf & Editor Video" },
+  { name: "Efraim Ghiurau", role: "Dezvoltator Site" },
+  { name: "Numaiștiu Numele", role: "Expert Marketing & Reclame" },
 ];
 
 export default function TeamSection() {

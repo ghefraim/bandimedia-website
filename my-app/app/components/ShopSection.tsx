@@ -2,7 +2,7 @@ import { LiquidGlassButton } from "./LiquidGlassButton";
 
 const products = [
   {
-    title: "Bandi Presets Pro",
+    title: "Bandi Presetări Pro",
     description: "20 de presetări care oferă oricărei fotografii un aspect original și stilizat",
     price: "$14.99",
     image: "/presets1.png",
@@ -21,7 +21,7 @@ export default function ShopSection() {
       <h2 className="text-2xl md:text-3xl font-medium mb-2">
         Cumpără și poartă viziunea noastră
       </h2>
-      <h1 className="text-4xl md:text-5xl font-bold mb-8">Bandi Media Shop</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mb-8">Bandi Media Magazin</h1>
 
       <div className="flex flex-wrap justify-center items-stretch gap-10 max-w-6xl mx-auto">
         {products.map(({ title, description, price, image }, idx) => (
@@ -36,7 +36,7 @@ export default function ShopSection() {
                 <h3 className="text-2xl font-semibold mb-2">{title}</h3>
                 <p className="text-sm mb-4">{description}</p>
                 <p className="text-xl font-bold mb-4">{price}</p>
-                <LiquidGlassButton variant="primary">Buy</LiquidGlassButton>
+                <LiquidGlassButton variant="primary">Cumpără</LiquidGlassButton>
               </div>
               <img
                 src={image}
@@ -53,7 +53,7 @@ export default function ShopSection() {
           href="#"
           className="inline-flex items-center px-6 py-3 border border-green-300 text-green-300 rounded-lg hover:bg-green-900 hover:text-white transition-colors"
         >
-          View All Products →
+          Vezi toate Produsele →
         </a>
       </div>
     </section>
