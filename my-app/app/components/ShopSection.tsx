@@ -21,7 +21,7 @@ export default function ShopSection() {
       <h2 className="text-2xl md:text-3xl font-medium mb-2">
         Cumpără și poartă viziunea noastră
       </h2>
-      <h1 className="text-4xl md:text-5xl font-bold mb-8">Bandi Media Magazin</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mb-8">Magazin</h1>
 
       <div className="flex flex-wrap justify-center items-stretch gap-10 max-w-6xl mx-auto">
         {products.map(({ title, description, price, image }, idx) => (

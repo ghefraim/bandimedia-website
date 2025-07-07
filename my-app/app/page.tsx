@@ -5,6 +5,7 @@ import TeamSection from "./components/TeamSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import ShopSection from "./components/ShopSection";
 import BlogSection from "./components/BlogSection";
+import AddressSection from "./components/AddressSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <TestimonialsSection />
         <ShopSection />
         <BlogSection />
+        <AddressSection />
       </main>
     </>
   );
