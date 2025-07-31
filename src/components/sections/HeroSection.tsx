@@ -1,0 +1,67 @@
+import React from 'react';
+import { heroData } from '@/data/heroData';
+
+// High-quality images for the hero collage
+const heroImages = [
+  "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+  "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+  "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+  "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+  "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+  "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
+  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80"
+];
+
+export default function HeroSection() {
+  return (
+    <section className="relative  ">
+      {/* Fixed height image strip */}
+      <div className="relative w-full h-[200px] md:h-[350px] overflow-hidden">
+        <div className="flex h-full w-full">
+          {heroImages.map((image, index) => (
+            <div 
+              key={index} 
+              className="flex-1 h-full min-w-0"
+            >
+              <img 
+                src={image} 
+                alt={`Hero image ${index + 1}`} 
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      {/* "NEVER DO NORMAL" Banner - positioned to overlap */}
+      <div className="relative z-10 flex justify-center -mt-8 md:-mt-12">
+        <div className="relative inline-block">
+          <div 
+            className="absolute inset-0 bg-[var(--brand-yellow)] z-0"
+            style={{ transform: 'skewX(-15deg)' }}
+          ></div>
+          <h1 
+            className="relative text-gray-900 text-5xl md:text-8xl font-black uppercase z-10 px-8 py-3"
+            style={{ transform: 'skewX(0deg)' }}
+          >
+            {heroData.mainTitle.firstPart}
+            <br />
+            {heroData.mainTitle.secondPart}
+          </h1>
+        </div>
+      </div>
+      
+      {/* Hero Content */}
+      <div className="relative px-5 py-12 md:px-10 md:py-20">
+        <div className="max-w-[1312px] mx-auto text-center">
+          <h2 className="text-white text-xl md:text-2xl mb-6 font-light tracking-wide">
+            {heroData.subtitle}
+          </h2>
+          <p className="text-white/60 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-geist font-ultra-thin tracking-wide">
+            {heroData.description}
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+} 

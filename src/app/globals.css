@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+:root {
+  --background: hsl(126, 46%, 8%);
+  --foreground: #f9fafb;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --radius: 0.5rem;
+  --brand-yellow: #facc15;
+  --brand-yellow-hover: #eab308;
+}
+
+body {
+  background: hsl(126, 46%, 8%);
+  color: #f9fafb; /* text-gray-50 */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: hsl(126, 46%, 8%);
+  color: #f9fafb; /* text-gray-50 */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Enable text selection globally with high specificity */
+*, 
+*::before, 
+*::after {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* Disable text selection for interactive elements */
+button, 
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"],
+.cursor-pointer,
+a {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* Ensure text elements are selectable */
+p, 
+h1, h2, h3, h4, h5, h6, 
+span, 
+div:not(.cursor-pointer),
+blockquote,
+li {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* Custom font faces if needed */
+@font-face {
+  font-family: 'webflow-icons';
+  src: url('data:application/x-font-woff;charset=utf-8;base64,') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-webflow_icons::before {
+  font-family: 'webflow-icons';
+}
+
+.font-impact {
+  font-family: Impact, "Arial Black", sans-serif;
+}
+
+.font-poppins {
+  font-family: Poppins, system-ui, sans-serif;
+}
+
+/* Font switching utility classes */
+.font-geist {
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-geist-mono {
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, "Roboto Mono", "Courier New", monospace;
+}
+
+.font-geist-sans {
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Weight variations */
+.font-ultra-thin {
+  font-weight: 100;
+}
+
+.font-extra-thin {
+  font-weight: 200;
+}
+
+.font-super-light {
+  font-weight: 250;
+}
+
+/* Letter spacing variations */
+.tracking-ultra-wide {
+  letter-spacing: 0.15em;
+}
+
+.tracking-super-wide {
+  letter-spacing: 0.1em;
+}
+
+/* Infinite carousel animations */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 60s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 60s linear infinite;
+}

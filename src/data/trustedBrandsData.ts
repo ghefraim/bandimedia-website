@@ -1,0 +1,30 @@
+export interface TrustedBrand {
+    readonly id: string;
+    readonly name: string;
+    readonly logo: string;
+    readonly desktopClass: string;
+    readonly mobileClass: string;
+  }
+  
+  export const trustedBrandsData = {
+    brands: [
+      { id: 'adidas', name: 'Adidas', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/67795134ad8b4863b41435e0_Adidas_1.svg", desktopClass: "aspect-[106_/_74] box-border hidden max-w-[55.3333px] w-full md:inline-block", mobileClass: "aspect-[106_/_74] box-border block max-w-[41.5px] w-full md:hidden" },
+      { id: 'puma', name: 'Puma', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/6779514ad528efdd1d7e2eb2_Puma.svg", desktopClass: "aspect-[111_/_56] box-border hidden max-w-[74px] w-full md:inline-block", mobileClass: "aspect-[111_/_56] box-border block max-w-[55.5px] w-full md:hidden" },
+      { id: 'asos', name: 'Asos', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/677951b1be437367779544c2_Asos.svg", desktopClass: "aspect-[326_/_122] box-border hidden max-w-[82.6667px] w-full md:inline-block", mobileClass: "aspect-[326_/_122] box-border block max-w-[62px] w-full md:hidden" },
+      { id: 'michael-kors', name: 'Michael Kors', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/67795225b84685ae879de48a_Michael_Kors.svg", desktopClass: "aspect-[600_/_62] box-border hidden max-w-[220px] w-full md:inline-block", mobileClass: "aspect-[600_/_62] box-border block max-w-[165px] w-full md:hidden" },
+      { id: 'maybelline', name: 'Maybelline', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/6779536b9727a85f078a3068_Maybelline-Logo_1.svg", desktopClass: "aspect-[221_/_33] box-border hidden max-w-[200.667px] w-full md:inline-block", mobileClass: "aspect-[221_/_33] box-border block max-w-[150.5px] w-full md:hidden" },
+      { id: 'loreal', name: 'Loreal', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/677953cb85338dcb91a7808e_Loreal.svg", desktopClass: "aspect-[157_/_29] box-border hidden max-w-[152px] w-full md:inline-block", mobileClass: "aspect-[157_/_29] box-border block max-w-[114px] w-full md:hidden" },
+      { id: 'estee-lauder', name: 'Estee-Lauder', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/677954c620f46121a66c864a_estee-lauder-3_1.svg", desktopClass: "aspect-[265_/_35] box-border hidden max-w-[229.333px] w-full md:inline-block", mobileClass: "aspect-[265_/_35] box-border block max-w-[172px] w-full md:hidden" },
+      { id: 'disney', name: 'Disney', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/67795557d2b779b4be881804_disney_1.svg", desktopClass: "aspect-[298_/_124] box-border hidden max-w-[103.333px] w-full md:inline-block", mobileClass: "aspect-[298_/_124] box-border block max-w-[77.5px] w-full md:hidden" },
+      { id: 'amazon', name: 'Amazon', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/677955c1c6fdc72c7e8b9011_Amazon.svg", desktopClass: "aspect-[100_/_31] box-border hidden max-w-[66.6667px] w-full md:inline-block", mobileClass: "aspect-[100_/_31] box-border block max-w-[50px] w-full md:hidden" },
+      { id: 'revolut', name: 'Revolut', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/677956be115e12eff6320691_Revolut.svg", desktopClass: "aspect-[262_/_60] box-border hidden max-w-[104px] w-full md:inline-block", mobileClass: "aspect-[262_/_60] box-border block max-w-[78px] w-full md:hidden" },
+      { id: 'samsonite', name: 'Samsonite', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/67795710e8221903ba0e9948_Samsonite.svg", desktopClass: "aspect-[250_/_40] box-border hidden max-w-[138px] w-full md:inline-block", mobileClass: "aspect-[250_/_40] box-border block max-w-[103.5px] w-full md:hidden" },
+      { id: 'sg', name: 'SG', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/6779574fddcd25170639618a_SG.svg", desktopClass: "aspect-[154_/_67] box-border hidden max-w-[102.667px] w-full md:inline-block", mobileClass: "aspect-[154_/_67] box-border block max-w-[77px] w-full md:hidden" },
+      { id: 'south-australia', name: 'South Australia', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/67795808b84685ae87a220c6_South.svg", desktopClass: "aspect-[300_/_103] box-border hidden max-w-28 w-full md:inline-block", mobileClass: "aspect-[300_/_103] box-border block max-w-[84px] w-full md:hidden" },
+      { id: 'tui', name: 'TUI', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/67795eba36f0a6df3ad27dc2_TUI.svg", desktopClass: "aspect-[124_/_55] box-border hidden max-w-[82.6667px] w-full md:inline-block", mobileClass: "aspect-[124_/_55] box-border block max-w-[62px] w-full md:hidden" },
+      { id: 'marriot', name: 'Marriot', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/67795f35c3fd79abb2481d5f_marriott.svg", desktopClass: "aspect-[166_/_65] box-border hidden max-w-[110.667px] w-full md:inline-block", mobileClass: "aspect-[166_/_65] box-border block max-w-[83px] w-full md:hidden" },
+      { id: 'ichr', name: 'ICHR', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/67796045203b09f5429aa080_IHR.svg", desktopClass: "aspect-[169_/_77] box-border hidden max-w-[134.667px] w-full md:inline-block", mobileClass: "aspect-[169_/_77] box-border block max-w-[101px] w-full md:hidden" },
+      { id: 'zuma', name: 'Zuma', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/677960b389c565a4b155ca84_Zuma.svg", desktopClass: "aspect-[601_/_132] box-border hidden max-w-[104px] w-full md:inline-block", mobileClass: "aspect-[601_/_132] box-border block max-w-[78px] w-full md:hidden" },
+      { id: 'burger-lobster', name: 'Burger Lobster', logo: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/6779612092b4b170bab25268_Burger_&_Lobster.svg", desktopClass: "aspect-[304_/_63] box-border hidden max-w-[166.667px] w-full md:inline-block", mobileClass: "aspect-[304_/_63] box-border block max-w-[125px] w-full md:hidden" }
+    ] as const
+  } as const; 
