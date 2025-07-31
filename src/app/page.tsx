@@ -4,9 +4,9 @@ import HeroSection from '@/components/sections/HeroSection';
 import TrustedBySection from '@/components/sections/TrustedBySection';
 import ResultsSection from '@/components/sections/ResultsSection';
 import ServicesSection from '@/components/sections/ServicesSection';
-import GlobalSection from '@/components/sections/GlobalSection';
+import WhereSection from '@/components/sections/WhereSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
-import ContactSection from '@/components/sections/ContactSection';
+import CTASection from '@/components/sections/CTASection';
 import CaseStudyModal from '@/components/modals/CaseStudyModal';
 
 export default function Home() {
@@ -28,11 +28,11 @@ export default function Home() {
         <ResultsSection onOpenCaseStudyModal={openCaseStudyModal} />
         <ServicesSection />
       </div>
-      <GlobalSection />
+      <WhereSection />
       <div className="bg-slate-200 box-border">
         <TestimonialsSection />
       </div>
-      <ContactSection />
+      <CTASection />
       <CaseStudyModal 
         isOpen={isCaseStudyModalOpen} 
         onClose={closeCaseStudyModal} 

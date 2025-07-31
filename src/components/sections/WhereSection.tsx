@@ -1,10 +1,21 @@
 import React from 'react';
 import SectionTitle from '@/components/ui/SectionTitle';
 
-export default function GlobalSection() {
+export default function WhereSection() {
   return (
-    <section className="text-white bg-background box-border py-16 md:py-20">
-      <div className="box-border w-full px-5 md:px-10">
+    <section className="text-white relative box-border py-16 md:py-20 overflow-hidden">
+      {/* Background image with overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url("/assets/oradea.jpg")',
+        }}
+      />
+      {/* Dark overlay to maintain readability */}
+      <div className="absolute inset-0 bg-background opacity-80" />
+      
+      {/* Content */}
+      <div className="relative z-10 box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="box-border text-center">
             <SectionTitle title="ORADEA" subtitle="SITUAȚI ÎN" subtitleClassName="text-white" invertOrder={true}/>
