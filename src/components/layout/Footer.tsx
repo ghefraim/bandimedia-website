@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="box-border pb-0 md:pb-16">
             <div className="items-start box-border gap-x-12 flex flex-col justify-between gap-y-12 pt-0 md:[align-items:normal] md:gap-x-[normal] md:flex-row md:gap-y-[normal] md:pt-16">
               <div className="items-start box-border gap-x-4 flex flex-col justify-start gap-y-4 w-full md:gap-x-6 md:gap-y-6 md:w-[500px]">
-                <img src="https://c.animaapp.com/mdnaiz9v1SsCjN/assets/677912396e8ec890abcdaba8_Komodo_Logo.svg" alt="" className="box-border max-w-48 w-full md:max-w-[230px]" />
+                <img src="/assets/logo.png" alt="" className="box-border max-w-48 w-full md:max-w-[230px]" />
                 <p className="text-base box-border leading-6 md:text-lg md:leading-[27px]">Join our newsletter to stay up to date on features and releases.</p>
                 <div className="box-border w-full">
                   <form 
@@ -43,7 +43,7 @@ export default function Footer() {
                           name="Email" 
                           placeholder="Type your email" 
                           type="email" 
-                          className="text-lg bg-gray-800 box-border block h-12 leading-[25.7143px] outline-zinc-300 align-middle w-full border border-slate-600 p-3 rounded-lg border-solid"
+                          className="text-lg box-border block h-12 leading-[25.7143px] outline-zinc-300 align-middle w-full border border-slate-600 p-3 rounded-lg border-solid"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           required
@@ -82,7 +82,7 @@ export default function Footer() {
             </div>
             <div className="items-start box-border gap-x-8 flex flex-col-reverse justify-between gap-y-8 mt-8 md:items-center md:gap-x-[normal] md:flex-row md:gap-y-[normal] md:mt-[60px]">
               <p className="font-semibold box-border">
-                © <strong className="font-bold box-border">2025 KOMODO MEDIA LIMITED - Company Number: 10731544</strong>
+                © <strong className="font-bold box-border">{new Date().getFullYear()} BANDI MEDIA SRL</strong>
               </p>
               <Link href="/privacy-policy" className="box-border block max-w-full hover:text-[var(--brand-yellow)] transition-colors">
                 <div className="box-border">Privacy policy</div>

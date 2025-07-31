@@ -14,7 +14,7 @@ export default function Header() {
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="items-center box-border flex justify-between">
             <Link href="/" aria-label="home" className="relative text-zinc-800 box-border block float-left max-w-24 w-full ml-3 mr-auto md:max-w-[130px] md:mx-0">
-              <img src="https://c.animaapp.com/mdnaiz9v1SsCjN/assets/677912396e8ec890abcdaba8_Komodo_Logo.svg" alt="" className="box-border inline-block max-w-full w-full" />
+              <img src="/assets/logo.png" alt="" className="box-border inline-block max-w-full w-full" />
             </Link>
             <nav role="navigation" className="relative items-center bg-background box-border hidden flex-col float-right justify-start min-h-0 min-w-0 px-5 py-8 md:bg-transparent md:flex md:flex-row md:min-h-[auto] md:min-w-[auto] md:p-0">
               <div className="box-border gap-x-6 flex flex-col min-h-0 min-w-0 gap-y-6 mr-0 pb-6 md:flex-row md:min-h-[auto] md:min-w-[auto] md:mr-8 md:pb-0">
