@@ -1,16 +1,12 @@
 import React from 'react';
 import SectionTitle from '@/components/ui/SectionTitle';
 
-export default function AboutEffectSection() {
+export default function ContactEffectSection() {
   const stats = [
-    { number: '3', label: 'Birouri în toată lumea', highlight: true },
-    { number: '70+', label: 'Angajați', highlight: false },
-    { number: '150+', label: 'Feed-uri sociale', highlight: false },
-    { number: '350+', label: 'Evenimente & Activări', highlight: false },
-    { number: '500+', label: 'Campanii cu influenceri', highlight: true },
-    { number: '$145M+', label: 'Vânzări urmărite', highlight: false },
-    { number: '220M+', label: 'Rețea de influenceri', highlight: false },
-    { number: '10BN+', label: 'Impresii de campanie', highlight: true }
+    { number: '70+', label: 'Angajați', highlight: true },
+    { number: '500+', label: 'Campanii cu influenceri', highlight: false },
+    { number: '$145M+', label: 'Vânzări urmărite', highlight: true },
+    { number: '10BN+', label: 'Impresii de campanie', highlight: false }
   ];
 
   return (
@@ -28,7 +24,7 @@ export default function AboutEffectSection() {
         
         {/* Description */}
         <div className="mb-12 md:mb-16 text-center">
-          <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-white/90 mb-6 font-geist font-light tracking-wide">
+          <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-white/90 font-geist font-light tracking-wide mb-6">
             Știm cum să combinăm perspectivele strategice cu excelența creativă pentru a crea un impact de durată.
           </p>
           <p className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-white/70 font-geist font-light tracking-wide">
@@ -44,7 +40,7 @@ export default function AboutEffectSection() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className={`text-4xl md:text-5xl lg:text-6xl font-black mb-2 ${

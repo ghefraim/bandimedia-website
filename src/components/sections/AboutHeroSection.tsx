@@ -57,7 +57,7 @@ export default function AboutHeroSection() {
           <h2 className="text-white text-xl md:text-2xl mb-6 font-light tracking-wide">
             {heroData.subtitle}
           </h2>
-          <p className="text-white/60 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-geist font-ultra-thin tracking-wide">
+          <p className="text-white/60 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-geist font-light tracking-wide">
             {heroData.description}
           </p>
         </div>

@@ -16,12 +16,12 @@ export default function AboutStorySection() {
         
         {/* Story Content */}
         <div className="mb-12 md:mb-16">
-          <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-center text-gray-700 font-geist font-ultra-thin tracking-wide">
+          <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-center text-gray-700 font-geist font-light tracking-wide">
             O viziune de a redefini marketingul și modul în care brandurile se conectează cu audiența lor 
             a fost catalizatorul pentru patru cei mai buni prieteni să lanseze BandiMedia în 2017. 
             Împreună, au decis să nu doar să spună povestea, ci să o creeze.
           </p>
-          <p className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-center text-gray-600 mt-6 font-geist font-ultra-thin tracking-wide">
+          <p className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-center text-gray-600 mt-6 font-geist font-light tracking-wide">
             Nefrică să împingă limitele sau să sfideze standardele și așteptările, 
             conducerea lumii social media, digital și influencer marketing era obiectivul.
           </p>
