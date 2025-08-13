@@ -7,7 +7,7 @@ export default function ContactInfoSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Contact Information */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-black uppercase mb-8 text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-black uppercase mb-8 text-gray-900 font-geist">
               Informații de Contact
             </h2>
             
@@ -21,10 +21,10 @@ export default function ContactInfoSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 font-geist">Email</h3>
                   <a 
                     href="mailto:contact@bandimedia.com" 
-                    className="text-lg text-gray-600 hover:text-[var(--brand-yellow)] transition-colors"
+                    className="text-lg text-gray-600 hover:text-[var(--brand-yellow)] transition-colors font-geist"
                   >
                     contact@bandimedia.com
                   </a>
@@ -39,8 +39,8 @@ export default function ContactInfoSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Biroul Oradea</h3>
-                  <p className="text-lg text-gray-600">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 font-geist">Biroul Oradea</h3>
+                  <p className="text-lg text-gray-600 font-geist">
                     Strada Lăpușului nr. 21
                     <br />
                     Oradea, România
@@ -50,8 +50,8 @@ export default function ContactInfoSection() {
 
               {/* Additional Info */}
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">Program de lucru</h3>
-                <div className="space-y-2 text-gray-600">
+                <h3 className="text-lg font-bold text-gray-900 mb-3 font-geist">Program de lucru</h3>
+                <div className="space-y-2 text-gray-600 font-geist">
                   <p>Luni - Vineri: 09:00 - 18:00</p>
                   <p>Sâmbătă: 10:00 - 14:00</p>
                   <p>Duminică: Închis</p>
@@ -62,7 +62,7 @@ export default function ContactInfoSection() {
 
           {/* Map */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-black uppercase mb-8 text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-black uppercase mb-8 text-gray-900 font-geist">
               Locația Noastră
             </h2>
             
@@ -80,7 +80,7 @@ export default function ContactInfoSection() {
             </div>
             
             <div className="mt-6 p-4 bg-[var(--brand-yellow)]/10 rounded-lg">
-              <p className="text-gray-700 font-geist font-light tracking-wide">
+              <p className="text-gray-700 font-geist font-normal tracking-wide">
                 <strong>Cum să ne găsești:</strong> Suntem localizați în centrul Oradei, 
                 cu acces ușor la transport public și parcare disponibilă în zonă.
               </p>

@@ -9,7 +9,7 @@ interface ResultsSectionProps {
 
 export default function ResultsSection({ onOpenCaseStudyModal }: ResultsSectionProps) {
   return (
-    <section id="results" className="bg-[url('https://cdn.prod.website-files.com/6774e9be183c4954edcadaa4/67ee7152655851a9f4d5fb01_1.svg')] bg-repeat-x box-border bg-bottom py-20">
+    <section id="results" className="bg-[url('/B-pattern.svg')] bg-repeat-x box-border bg-bottom py-20">
       <div className="box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="box-border">
