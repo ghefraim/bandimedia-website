@@ -19,7 +19,20 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="bg-[url('https://cdn.prod.website-files.com/6774e9be183c4954edcadaa4/67ee7152655851a9f4d5fb01_1.svg')] bg-no-repeat box-border bg-bottom pt-16 pb-20 md:pt-20 md:pb-40">
+    <section className="relative box-border pt-16 pb-20 md:pt-20 md:pb-40">
+      {/* Repeating B pattern background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="flex justify-between items-end h-full opacity-5">
+          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+        </div>
+      </div>
+      <div className="relative z-10">
       <div className="box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="items-center box-border flex flex-col justify-start text-center mb-12 md:mb-16">
@@ -97,6 +110,7 @@ export default function TestimonialsSection() {
             </li>
           ))}
         </ul>
+      </div>
       </div>
     </section>
   );

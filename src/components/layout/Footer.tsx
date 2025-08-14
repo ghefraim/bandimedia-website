@@ -22,7 +22,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="text-white bg-none bg-repeat bg-auto box-border bg-left font-poppins md:bg-[url('https://cdn.prod.website-files.com/6774e9be183c4954edcadaa4/677d40f3facba32a269127c4_K%20whte.svg')] md:bg-no-repeat md:bg-size-[307.2px] md:bg-[position:80%_0px]">
+    <footer className="text-white bg-none bg-repeat bg-auto box-border bg-left font-poppins md:bg-[url('/B-white.svg')] md:bg-no-repeat md:bg-size-[307.2px] md:bg-[position:60%_0px]">
       <div className="box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="box-border pb-0 md:pb-16">

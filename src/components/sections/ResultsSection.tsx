@@ -9,7 +9,19 @@ interface ResultsSectionProps {
 
 export default function ResultsSection({ onOpenCaseStudyModal }: ResultsSectionProps) {
   return (
-    <section id="results" className="bg-[url('https://cdn.prod.website-files.com/6774e9be183c4954edcadaa4/67ee7152655851a9f4d5fb01_1.svg')] bg-repeat-x box-border bg-bottom py-20">
+    <section id="results" className="relative box-border py-20">
+      {/* Repeating B pattern background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="flex justify-between items-end h-full opacity-5">
+          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+        </div>
+      </div>
+      <div className="relative z-10">
       <div className="box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="box-border">
@@ -57,6 +69,7 @@ export default function ResultsSection({ onOpenCaseStudyModal }: ResultsSectionP
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
