@@ -56,7 +56,7 @@ export default function Footer() {
                       </div>
                       <input type="submit" value="Abonează-te" className="text-gray-900 text-base font-bold bg-[var(--brand-yellow)] box-border block leading-6 text-center text-nowrap border border-[var(--brand-yellow)] px-5 py-2 rounded-[100px] border-solid md:text-lg md:leading-[27px] cursor-pointer hover:bg-yellow-500 transition-colors" />
                     </div>
-                    <p className="text-xs box-border leading-[18px]">Prin abonare ești de acord cu <Link href="/privacy-policy" className="text-[var(--brand-yellow)]">Politica noastră de Confidențialitate</Link> și consimți să primești actualizări de la compania noastră.</p>
+                    <p className="mt-2 text-xs box-border leading-[18px]">Prin abonare ești de acord cu <Link href="/privacy-policy" className="text-[var(--brand-yellow)]">Politica noastră de Confidențialitate</Link> și consimți să primești actualizări de la compania noastră.</p>
                   </form>
                   {showSuccess && (
                     <div role="region" aria-label="Subscription form success" className="text-gray-900 bg-[var(--brand-yellow)] box-border block text-center p-6 mt-4 rounded-lg">
