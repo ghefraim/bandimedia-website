@@ -27,19 +27,19 @@ export default function WhereSection() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
               <div className="text-center">
                 <div className="text-4xl font-bold text-[var(--brand-yellow)]">50+</div>
-                <div className="text-sm opacity-80 mt-2">Countries</div>
+                <div className="text-sm opacity-80 mt-2">Colaboratori</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-[var(--brand-yellow)]">100M+</div>
-                <div className="text-sm opacity-80 mt-2">Reach</div>
+                <div className="text-4xl font-bold text-[var(--brand-yellow)]">3500+</div>
+                <div className="text-sm opacity-80 mt-2">Postări realizate</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-[var(--brand-yellow)]">500+</div>
-                <div className="text-sm opacity-80 mt-2">Campaigns</div>
+                <div className="text-4xl font-bold text-[var(--brand-yellow)]">5M+</div>
+                <div className="text-sm opacity-80 mt-2">Vizualizări</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-[var(--brand-yellow)]">95%</div>
-                <div className="text-sm opacity-80 mt-2">Client Retention</div>
+                <div className="text-4xl font-bold text-[var(--brand-yellow)]">80+</div>
+                <div className="text-sm opacity-80 mt-2">Evenimente</div>
               </div>
             </div>
           </div>

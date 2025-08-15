@@ -1,16 +1,13 @@
 import React from 'react';
+import Link from 'next/link';
 import SectionTitle from '@/components/ui/SectionTitle';
 
 export default function AboutEffectSection() {
   const stats = [
-    { number: '3', label: 'Birouri în toată lumea', highlight: true },
-    { number: '70+', label: 'Angajați', highlight: false },
-    { number: '150+', label: 'Feed-uri sociale', highlight: false },
-    { number: '350+', label: 'Evenimente & Activări', highlight: false },
-    { number: '500+', label: 'Campanii cu influenceri', highlight: true },
-    { number: '$145M+', label: 'Vânzări urmărite', highlight: false },
-    { number: '220M+', label: 'Rețea de influenceri', highlight: false },
-    { number: '10BN+', label: 'Impresii de campanie', highlight: true }
+    { number: '50+', label: 'Colaboratori', highlight: true },
+    { number: '3500+', label: 'Postări realizate', highlight: false },
+    { number: '5M+', label: 'Vizualizări', highlight: true },
+    { number: '80+', label: 'Evenimente', highlight: false }
   ];
 
   return (
@@ -37,9 +34,9 @@ export default function AboutEffectSection() {
           
           {/* CTA Button */}
           <div className="mt-8">
-            <button className="bg-[var(--brand-yellow)] text-black font-bold px-8 py-3 text-lg hover:bg-[var(--brand-yellow-hover)] transition-colors">
-              Să discutăm
-            </button>
+            <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] hover:bg-[var(--brand-yellow-hover)] text-black box-border block leading-6 text-center px-5 py-2 rounded-[100px] font-poppins md:text-lg md:inline-block md:leading-[27px]">
+              Contactează-ne
+            </Link>
           </div>
         </div>
 

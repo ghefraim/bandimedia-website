@@ -5,65 +5,58 @@ export default function AboutTeamSection() {
   const teamMembers = [
     {
       name: 'Paul Bandi',
-      role: 'Co-Fondator',
+      role: 'Fondator, CEO',
       image: '/assets/team/paul-bandi.png',
-      instagram: '#',
-      linkedin: '#'
+      instagram: 'https://www.instagram.com/paulbandi/',
+      linkedin: 'https://www.linkedin.com/in/paulbandi/'
     },
     {
-      name: 'Maria Popescu',
-      role: 'Co-Fondator',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-      instagram: '#',
-      linkedin: '#'
-    },
-    {
-      name: 'Andrei Ionescu',
-      role: 'Co-Fondator',
+      name: 'Filip Bonce',
+      role: 'Designer Grafic, Videograf',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-      instagram: '#',
-      linkedin: '#'
+      instagram: 'https://www.instagram.com/filipbonce/',
+      linkedin: 'https://www.linkedin.com/in/filip-bonce-b5897a22a/'
     },
     {
-      name: 'Diana Radu',
-      role: 'Co-Fondator',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-      instagram: '#',
-      linkedin: '#'
-    },
-    {
-      name: 'Alex Marin',
-      role: 'CEO, România',
+      name: 'Denis Ursuț',
+      role: 'Editor, Videograf',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-      instagram: '#',
-      linkedin: '#'
+      instagram: 'https://www.instagram.com/denisgrnn/',
+      linkedin: 'https://www.linkedin.com/in/denis-ursut-66b60b230/'
     },
     {
-      name: 'Cristina Vasilescu',
-      role: 'Director General',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-      instagram: '#',
-      linkedin: '#'
-    },
-    {
-      name: 'Mihai Stoica',
-      role: 'Șef Campanii',
+      name: 'Ciprian Mizsei',
+      role: 'Social Media Manager',
       image: 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-      instagram: '#',
-      linkedin: '#'
+      instagram: 'https://www.instagram.com/_micheeros/',
+      linkedin: 'https://www.linkedin.com/in/mizsei-ciprian-721280367/'
     },
     {
-      name: 'Laura Gheorghe',
-      role: 'Șef Evenimente',
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-      instagram: '#',
-      linkedin: '#'
-    },
-    {
-      name: 'Stefan Popa',
-      role: 'CFO',
+      name: 'Efraim Ghiurău',
+      role: 'Web Developer',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
-      instagram: '#',
+      instagram: 'https://www.instagram.com/efi.ghiurau/',
+      linkedin: 'https://www.linkedin.com/in/efraim-ghiurau/'
+    },
+    {
+      name: 'Vlad Cosmin',
+      role: 'Ads Expert',
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
+      instagram: 'https://www.instagram.com/vlad.cosmin1/',
+      linkedin: 'https://www.linkedin.com/in/cosmin-vlad-035b33134/'
+    },
+    {
+      name: 'Andrei Ardelean',
+      role: 'Fotograf',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
+      instagram: 'https://www.instagram.com/andreiardelean_/',
+      linkedin: '#'
+    },
+    {
+      name: 'Vlăduț Sas',
+      role: 'Actor, Fotograf',
+      image: 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
+      instagram: 'https://www.instagram.com/sassvladut/',
       linkedin: '#'
     }
   ];
@@ -91,7 +84,7 @@ export default function AboutTeamSection() {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="text-center group">
               {/* Profile Image */}

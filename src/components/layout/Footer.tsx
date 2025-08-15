@@ -74,9 +74,27 @@ export default function Footer() {
                 <div className="items-center box-border gap-x-4 flex flex-col justify-center gap-y-4 text-center md:items-start md:text-left">
                   <div className="text-[var(--brand-yellow)] text-lg box-border leading-[27px]">Contact</div>
                   <div className="items-center box-border gap-x-4 flex flex-col justify-center gap-y-2 md:items-start">
-                    <div className="box-border">Locație: Oradea</div>
+                    <div className="box-border">
+                      Locație: 
+                      <a 
+                        href="https://maps.app.goo.gl/rSg45evCSk8epxdY8" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-[var(--brand-yellow)] hover:underline ml-1"
+                      >
+                        Str. Lăpușului nr. 21, Oradea
+                      </a>
+                    </div>
                     {/* <div className="box-border">Telefon: +40 740 123 456</div> */}
-                    <div className="box-border">Email: contact@bandimedia.com</div>
+                    <div className="box-border">
+                      Email: 
+                      <a 
+                        href="mailto:contact@bandimedia.com" 
+                        className="text-[var(--brand-yellow)] hover:underline ml-1"
+                      >
+                        contact@bandimedia.com
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className="items-center box-border gap-x-4 flex flex-col justify-center gap-y-4 text-center md:items-start md:text-left">
@@ -92,7 +110,7 @@ export default function Footer() {
             </div>
             <div className=" flex text-center w-full items-center box-border gap-x-8 flex-col-reverse justify-center gap-y-8 md:items-center md:gap-x-[normal] md:flex-row md:gap-y-[normal] md:mt-0">
               <p className="mt-4 font-semibold text-center box-border">
-                © <strong className="font-bold box-border">{new Date().getFullYear()} BANDI MEDIA SRL</strong>
+                © <strong className="font-bold box-border mt-2">{new Date().getFullYear()} BANDI MEDIA SRL</strong>
               </p>
           
             </div>

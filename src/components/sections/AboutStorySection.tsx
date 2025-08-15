@@ -17,13 +17,10 @@ export default function AboutStorySection() {
         {/* Story Content */}
         <div className="mb-12 md:mb-16">
           <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-center text-gray-700 font-geist font-normal tracking-wide">
-            O viziune de a redefini marketingul și modul în care brandurile se conectează cu audiența lor 
-            a fost catalizatorul pentru patru cei mai buni prieteni să lanseze BandiMedia în 2017. 
-            Împreună, au decis să nu doar să spună povestea, ci să o creeze.
+            Anul 2020 a fost cel care a adus ideea de Bandi Media. Totul a pornit din dorința de a fi un sprijin real pentru brandurile care vor să iasă la lumină și din pasiunea pentru creare de conținut și video. Povestea noastră a luat ființă în anul 2023, în luna martie, dar începuturile Bandi Media au fost mai timide.
           </p>
           <p className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-center text-gray-600 mt-6 font-geist font-normal tracking-wide">
-            Nefrică să împingă limitele sau să sfideze standardele și așteptările, 
-            conducerea lumii social media, digital și influencer marketing era obiectivul.
+            Însă lucrurile nu au rămas așa. Chiar dacă anul 2023 nu s-a dovedit a fi foarte fructuos, anul 2024 a adus o nouă pagină în povestea Bandi Media, un nou capitol plin de energie, idei îndrăznețe și colaborări care ne-au făcut să credem și mai mult în ceea ce facem. În prezent, suntem o echipă tânără care crede în potențialul fiecărui brand și care privește cu entuziasm spre viitor.
           </p>
         </div>
 
