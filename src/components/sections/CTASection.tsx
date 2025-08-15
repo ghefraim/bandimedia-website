@@ -13,10 +13,10 @@ export default function CTASection() {
               </h2>
             </div>
             <div className="items-start box-border gap-x-6 flex basis-[0%] flex-col grow justify-between gap-y-6 text-left font-poppins md:items-end md:gap-x-[normal] md:gap-y-[normal] md:text-right">
-              <p className="text-lg box-border leading-[27px] text-left md:text-right">
-                  Contactează-ne pentru a discuta despre posibilitatea de a lucra împreună sau pentru a răspunde la orice întrebări. Ne-ar plăcea să auzim de la tine!
+              <p className="text-sm font-light box-border leading-[20px] text-left md:text-lg md:font-normal md:leading-[27px] md:text-right">
+                  Ai o viziune? Tu vii cu ideea, noi venim cu strategii, content și rezultate. Nu există prea devreme sau prea târziu, există doar momentul perfect, care este ACUM. Vino să răsturnăm regulile și să rescriem povestea ta pe social media! Contactează-ne acum și o să ai parte de o analiză gratuită a contului tău.
                 </p>
-              <Link href="/contact" className="text-gray-900 text-base font-bold bg-[var(--brand-yellow)] block leading-6 text-center px-5 py-2 rounded-[100px] md:text-lg md:leading-[27px] hover:bg-yellow-500 transition-colors">Contactează-ne</Link>
+              <Link href="/contact" className="text-gray-900 text-base font-bold bg-[var(--brand-yellow)] block leading-6 text-center px-5 py-2 rounded-[100px] md:text-lg md:leading-[27px] hover:bg-yellow-500 transition-colors">CONTACTEAZĂ-NE</Link>
             </div>
           </div>
         </div>

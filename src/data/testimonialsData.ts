@@ -15,10 +15,10 @@ export interface Testimonial {
 export const testimonialsData = {
   testimonials: [
     {
-      id: 'olivia-farrell',
-      quote: 'Komodo have changed the game at TUI. Since our first project together back in 2019, the whole business has shifted to invest more in social after seeing the return and reach of our campaigns with Komodo.',
-      name: 'Olivia Farrell',
-      title: 'Social & Talent Marketing Lead , TUI',
+      id: 'marinel-neaga',
+      quote: 'Administrator competent, cu o echipă competentă care oferă servicii de top.',
+      name: 'Marinel Neaga',
+      title: '⭐️⭐️⭐️⭐️⭐️',
       avatar: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/67790fb6f49358dd4d263149_OLIVIA_FARRELL.png",
       icon: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/icon-3.svg",
       containerClass: "bg-emerald-300 box-border flex flex-col h-full justify-start pb-4 px-4 rounded-[20px] md:pb-8 md:px-8",
@@ -28,10 +28,10 @@ export const testimonialsData = {
       titleClass: "text-slate-600 text-sm box-border leading-[21px] md:text-lg md:leading-[27px]"
     },
     {
-      id: 'tofunmi-ifarajimi',
-      quote: `I'm not surprised we're now working on a retainer basis, the campaign went so well the first time it just made sense. That's credit to you guys!`,
-      name: 'Tofunmi Ifarajimi',
-      title: 'Digital Brand Activation Specialist, ADIDAS',
+      id: 'evodia-gag',
+      quote: `O echipă dinamică, profesionistă, cu viziune, cu atitudine pozitivă, și cel mai important, principii. E o bucurie să îi ai alături în procesul dezvoltării afacerii tale.`,
+      name: 'Evodia Gag',
+      title: '⭐️⭐️⭐️⭐️⭐️',
       avatar: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/67790edb5ad33146f48d74b9_Adidas.avif",
       icon: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/icon-3.svg",
       containerClass: "bg-[var(--brand-yellow)] box-border flex flex-col h-full justify-start pb-4 px-4 rounded-[20px] md:pb-8 md:px-8",
@@ -41,10 +41,10 @@ export const testimonialsData = {
       titleClass: "text-slate-600 text-sm box-border leading-[21px] md:text-lg md:leading-[27px]"
     },
     {
-      id: 'justine-dunton',
-      quote: `MASSIVE THANK YOU for everything you poured into our Halloween Event. We're seeing such INCREDIBLE content go up – and can't wait to see the full results and impact come through.`,
-      name: 'Justine Dunton',
-      title: 'Director Communications, MAC Cosmetics',
+      id: 'adelin-duca',
+      quote: `Chiar e o echipă serioasă care își face treaba. Te ajută să crești în mediul online și îți oferă diverse servicii de marketing și media.. Apelați cu încredere!`,
+      name: 'Adelin Duca',
+      title: '⭐️⭐️⭐️⭐️⭐️',
       avatar: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/677b3d592646de216e3b5303_f03fb12f9fd1533b5aaec75f952025da9b87ff71-1.png",
       icon: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/icon-4.svg",
       containerClass: "bg-slate-600 box-border flex flex-col h-full justify-start pb-4 px-4 rounded-[20px] md:pb-8 md:px-8",
@@ -54,10 +54,10 @@ export const testimonialsData = {
       titleClass: "text-sm box-border leading-[21px] md:text-lg md:leading-[27px]"
     },
     {
-      id: 'felicity-elliott',
-      quote: 'Working with Komodo has been better than any other agency i have worked with. They become part of the team which makes for seamless campaign execution. Exceeded all expectations.',
-      name: 'Felicity Elliott',
-      title: 'Brand Manager, Glaze Hair',
+      id: 'ionatan-lup',
+      quote: 'O echipă de oameni profesioniști care livrează peste așteptări și te fac să te simți ca într-o familie. The best!',
+      name: 'Ionatan Lup',
+      title: '⭐️⭐️⭐️⭐️⭐️',
       avatar: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/677b3c5054d917065f272aaf_Kiig.png",
       icon: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/icon-5.svg",
       containerClass: "bg-emerald-300 box-border flex flex-col h-full justify-start pb-4 px-4 rounded-[20px] md:pb-8 md:px-8",
@@ -67,10 +67,10 @@ export const testimonialsData = {
       titleClass: "text-sm box-border leading-[21px] md:text-lg md:leading-[27px]"
     },
     {
-      id: 'rany-rosalie',
-      quote: `Penhaligon's appointed Komodo as our events and content agency for a major fragrance launch which proved to be a great partnership from start to finish. We couldn't have wished for a better kickoff to the campaign.`,
-      name: 'Rany Rosalie',
-      title: 'Marketing Manager',
+      id: 'beni-strava',
+      quote: `Recomand cu încredere! O echipă super faină! Paul, the best!🫶🏽 Tot ce scot ei e top! Fac și deplasări. 🚀🔥`,
+      name: 'Beni Strava',
+      title: '⭐️⭐️⭐️⭐️⭐️',
       avatar: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/6779102cad994bbae5304c6f_Rony.png",
       icon: "https://c.animaapp.com/mdnaiz9v1SsCjN/assets/icon-4.svg",
       containerClass: "bg-slate-600 box-border flex flex-col h-full justify-start pb-4 px-4 rounded-[20px] md:pb-8 md:px-8",

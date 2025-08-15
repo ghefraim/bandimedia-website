@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { servicesData } from '@/data/servicesData';
 
 export default function ServicesSection() {
@@ -12,24 +11,21 @@ export default function ServicesSection() {
               {/* Custom title without yellow background */}
               <div  className="items-center box-border flex flex-col justify-start text-center">
                 <h2 className="text-black text-[32px] box-border leading-[35.2px] md:text-[64px] md:leading-[70.4px]">
-                  SERVICIILE NOASTRE
+                  SERVICIILE PE CARE ȚI LE PUTEM OFERI
                 </h2>
               </div>
             </div>
             <div className="box-border gap-x-10 flex flex-col max-w-full gap-y-10 w-full mt-16 mx-0 md:max-w-[1200px] md:mt-20 md:mx-auto">
               {servicesData.services.map((service) => (
-                <Link key={service.id} href={service.href} className={service.containerClass}>
+                <div key={service.id} className={service.containerClass}>
                   <img src={service.image} alt="" sizes="100vw" className="self-end box-border h-40 max-w-full object-cover object-[100%_50%] text-left w-full overflow-hidden rounded-tl-none rounded-r-2xl md:h-auto md:max-w-[360px] md:object-fill md:object-[50%_50%] md:text-center md:rounded-tl-2xl md:rounded-br-none" />
                   <div className="items-stretch box-border gap-x-2 flex basis-[0%] flex-col grow justify-start gap-y-2 text-left w-full mb-0 pl-5 md:gap-x-8 md:gap-y-8 md:w-auto md:mb-12 md:pl-0">
-                    <div className={service.headerClass}>
+                    <div className="items-start box-border gap-x-8 flex justify-start gap-y-8 md:items-center md:gap-x-[normal] md:gap-y-[normal]">
                       <h3 className="text-[28px] box-border leading-[33.6px] md:text-5xl md:leading-[57.6px]">{service.title}</h3>
-                      <div className={service.iconContainerClass}>
-                        <img src={service.icon} alt="Icon" className="box-border h-full w-full" />
-                      </div>
                     </div>
                     <p className="text-base box-border leading-6 md:text-lg md:leading-[28.8px]">{service.description}</p>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </div>

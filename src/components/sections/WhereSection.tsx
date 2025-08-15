@@ -18,11 +18,10 @@ export default function WhereSection() {
       <div className="relative z-10 box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="box-border text-center">
-            <SectionTitle title="ORADEA" subtitle="SITUAȚI ÎN" subtitleClassName="text-white" invertOrder={true}/>
+            <SectionTitle title="VESTUL ROMÂNIEI" subtitle="SUNTEM ÎN" subtitleClassName="text-white" invertOrder={true}/>
             <div className="mt-12">
               <p className="text-lg leading-relaxed max-w-4xl mx-auto">
-                Our global network spans across continents, connecting brands with audiences worldwide 
-                while maintaining deep local insights that drive authentic engagement and measurable results.
+                Cu rădăcini în vest, dar idei care ajung oriunde, aducem un mix unic de creativitate locală și viziune globală. Facem deplasări în tot vestul țării, așa că, nu ezita să ne contactezi!
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">

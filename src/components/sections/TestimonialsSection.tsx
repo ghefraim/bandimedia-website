@@ -79,22 +79,6 @@ export default function TestimonialsSection() {
         </div>
       </div>
 
-      {/* Navigation arrows */}
-      <div className="relative box-border z-10">
-        <div className="items-center box-border gap-x-8 flex justify-center gap-y-8 mt-8 md:mt-12">
-          <button
-            onClick={prevSlide}
-            className="cursor-pointer box-border h-12 w-12 bg-[url('https://cdn.prod.website-files.com/6774e9be183c4954edcadaa4/6774e9be183c4954edcadad5_arrow-left-alt.svg')] bg-no-repeat bg-center bg-contain border-none"
-            aria-label="Previous testimonial"
-          />
-          <button
-            onClick={nextSlide}
-            className="cursor-pointer box-border h-12 w-12 bg-[url('https://cdn.prod.website-files.com/6774e9be183c4954edcadaa4/6774e9be183c4954edcadad6_arrow-right-alt.svg')] bg-no-repeat bg-center bg-contain border-none"
-            aria-label="Next testimonial"
-          />
-        </div>
-      </div>
-
       {/* Pagination dots for mobile */}
       <div className="box-border block md:hidden">
         <ul className="items-center box-border gap-x-2 flex justify-center gap-y-2 mt-6">
