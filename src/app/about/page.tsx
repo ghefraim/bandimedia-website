@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import AboutHeroSection from '@/components/sections/AboutHeroSection';
 import TrustedBySection from '@/components/sections/TrustedBySection';
 import AboutStorySection from '@/components/sections/AboutStorySection';
 import AboutEffectSection from '@/components/sections/AboutEffectSection';

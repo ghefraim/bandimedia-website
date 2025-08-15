@@ -105,20 +105,20 @@ export default function TestimonialsSection() {
                   {isMobile ? (
                     // Mobile: Single testimonial
                     <div className="w-full flex justify-center">
-                      <div className={`${item.containerClass.replace('justify-start', 'justify-center')} w-full min-h-[400px] max-w-md`}>
-                        <div className={item.iconContainerClass}>
-                          <img src={item.icon} alt="Quote Icon" className="box-border h-full w-full" />
+                      <div className={`${(item as any).containerClass.replace('justify-start', 'justify-center')} w-full min-h-[400px] max-w-md`}>
+                        <div className={(item as any).iconContainerClass}>
+                          <img src={(item as any).icon} alt="Quote Icon" className="box-border h-full w-full" />
                         </div>
                         <div className="items-start box-border gap-x-2 flex basis-[0%] flex-col grow justify-between gap-y-2 mt-5 font-poppins md:gap-x-8 md:gap-y-8 md:mt-10">
                           <div className="flex flex-col justify-center flex-grow">
-                            <p className={item.textClass}>{item.quote}</p>
+                            <p className={(item as any).textClass}>{(item as any).quote}</p>
                           </div>
                           <div className="items-start box-border gap-x-4 flex flex-col justify-center gap-y-4 md:items-center md:gap-x-5 md:flex-row md:justify-start md:gap-y-5">
-                            <img src={item.avatar} alt={item.name} className="aspect-square box-border h-10 max-w-10 align-bottom w-full rounded-[100%] md:h-[74px] md:max-w-[74px]" />
+                            <img src={(item as any).avatar} alt={(item as any).name} className="aspect-square box-border h-10 max-w-10 align-bottom w-full rounded-[100%] md:h-[74px] md:max-w-[74px]" />
                             <div className="items-start box-border gap-x-1 flex flex-col justify-start gap-y-1">
                               <div className="box-border">
-                                <div className={item.nameClass}>{item.name}</div>
-                                <div className={item.titleClass}>{item.title}</div>
+                                <div className={(item as any).nameClass}>{(item as any).name}</div>
+                                <div className={(item as any).titleClass}>{(item as any).title}</div>
                               </div>
                             </div>
                           </div>
