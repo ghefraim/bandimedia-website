@@ -34,7 +34,7 @@ export default function RootLayout({
           <main className="box-border">
             {children}
           </main>
-          <div className="box-border pt-8 md:pt-20" style={{ borderTop: '4px solid var(--brand-yellow)' }}>
+          <div className="box-border pt-8 " style={{ borderTop: '4px solid var(--brand-yellow)' }}>
             <Footer />
           </div>
         </div>

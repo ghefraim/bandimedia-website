@@ -75,7 +75,9 @@ export default function Header() {
               </div>
             </div>
             <div className="items-stretch box-border flex flex-col justify-start min-h-[auto] min-w-[auto] md:[align-items:normal] md:hidden md:flex-row md:justify-normal md:min-h-0 md:min-w-0">
-              <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] box-border block leading-6 min-h-[auto] min-w-[auto] text-center border border-[var(--brand-yellow)] px-5 py-2 rounded-[100px] border-solid font-poppins md:text-lg md:inline-block md:leading-[27px] md:min-h-0 md:min-w-0">Talk to Us</Link>
+            <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] hover:bg-[var(--brand-yellow-hover)] text-black box-border block leading-6 text-center  px-5 py-2 rounded-[100px] font-poppins md:text-lg md:inline-block md:leading-[27px]">Contactează-ne</Link>
+             
+              {/* <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] box-border block leading-6 min-h-[auto] min-w-[auto] text-center border border-[var(--brand-yellow)] px-5 py-2 rounded-[100px] border-solid font-poppins md:text-lg md:inline-block md:leading-[27px] md:min-h-0 md:min-w-0">Contactează-ne</Link> */}
             </div>
           </div>
         </div>

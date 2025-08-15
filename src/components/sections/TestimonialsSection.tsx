@@ -1,21 +1,41 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { testimonialsData } from '@/data/testimonialsData';
 
 export default function TestimonialsSection() {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % testimonialsData.testimonials.length);
+  // Check for mobile screen size
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const testimonialPairs = [];
+  
+  // Group testimonials into pairs for desktop
+  for (let i = 0; i < testimonialsData.testimonials.length; i += 2) {
+    testimonialPairs.push(testimonialsData.testimonials.slice(i, i + 2));
+  }
+
+  // Use individual testimonials for mobile, pairs for desktop
+  const items = isMobile ? testimonialsData.testimonials : testimonialPairs;
+  const totalItems = items.length;
+
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % totalItems);
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + testimonialsData.testimonials.length) % testimonialsData.testimonials.length);
+  const goToPrev = () => {
+    setCurrentIndex((prev) => (prev - 1 + totalItems) % totalItems);
   };
 
   const goToSlide = (index: number) => {
-    setCurrentSlide(index);
+    setCurrentIndex(index);
   };
 
   return (
@@ -49,51 +69,107 @@ export default function TestimonialsSection() {
           </div>
         </div>
       </div>
-      <div className="box-border overflow-hidden">
-        <div className="relative box-border">
-          <div className="relative box-border z-0">
-            <div role="list" className="items-stretch box-border gap-x-0 flex h-full justify-start gap-y-0 translate-x-[-563.625px] md:gap-x-10 md:gap-y-10 md:translate-x-[-1864px]" style={{ transform: `translateX(calc(-${currentSlide * 100}% - ${currentSlide * 2}rem))` }}>
-              {testimonialsData.testimonials.map((testimonial, index) => (
-                <div key={testimonial.id} role="listitem" className="relative box-border shrink-0 list-none max-w-[75%] w-[85%] mr-6 md:max-w-[960px] md:w-full md:mr-8">
-                  <div className={testimonial.containerClass}>
-                    <div className={testimonial.iconContainerClass}>
-                      <img src={testimonial.icon} alt="Quote Icon" className="box-border h-full w-full" />
-                    </div>
-                    <div className="text-white items-start box-border gap-x-2 flex basis-[0%] flex-col grow justify-between gap-y-2 mt-5 font-poppins md:gap-x-8 md:gap-y-8 md:mt-10">
-                      <p className={testimonial.textClass}>{testimonial.quote}</p>
-                      <div className="items-start box-border gap-x-4 flex flex-col justify-center gap-y-4 md:items-center md:gap-x-5 md:flex-row md:justify-start md:gap-y-5">
-                        <img src={testimonial.avatar} alt={testimonial.name} className="aspect-square box-border h-10 max-w-10 align-bottom w-full rounded-[100%] md:h-[74px] md:max-w-[74px]" />
-                        <div className="items-start box-border gap-x-1 flex flex-col justify-start gap-y-1">
-                          <div className="box-border">
-                            <div className={testimonial.nameClass}>{testimonial.name}</div>
-                            <div className={testimonial.titleClass}>{testimonial.title}</div>
+      
+      {/* Testimonials Carousel */}
+      <div className="w-full px-5 md:px-10">
+        <div className="max-w-6xl mx-auto relative">
+          
+          {/* Navigation Arrows - Responsive positioning */}
+          <button
+            onClick={goToPrev}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-2 md:-translate-x-16 bg-white/10 hover:bg-white/20 text-white rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-colors duration-200 z-10"
+            aria-label="Previous testimonial"
+          >
+            <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          <button
+            onClick={goToNext}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-2 md:translate-x-16 bg-white/10 hover:bg-white/20 text-white rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center transition-colors duration-200 z-10"
+            aria-label="Next testimonial"
+          >
+            <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          <div className="overflow-hidden">
+            <div 
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {items.map((item, itemIndex) => (
+                <div key={itemIndex} className="w-full flex-shrink-0 px-4">
+                  {isMobile ? (
+                    // Mobile: Single testimonial
+                    <div className="w-full flex justify-center">
+                      <div className={`${item.containerClass} w-full min-h-[400px] max-w-md`}>
+                        <div className={item.iconContainerClass}>
+                          <img src={item.icon} alt="Quote Icon" className="box-border h-full w-full" />
+                        </div>
+                        <div className="items-start box-border gap-x-2 flex basis-[0%] flex-col grow justify-between gap-y-2 mt-5 font-poppins md:gap-x-8 md:gap-y-8 md:mt-10">
+                          <p className={item.textClass}>{item.quote}</p>
+                          <div className="items-start box-border gap-x-4 flex flex-col justify-center gap-y-4 md:items-center md:gap-x-5 md:flex-row md:justify-start md:gap-y-5">
+                            <img src={item.avatar} alt={item.name} className="aspect-square box-border h-10 max-w-10 align-bottom w-full rounded-[100%] md:h-[74px] md:max-w-[74px]" />
+                            <div className="items-start box-border gap-x-1 flex flex-col justify-start gap-y-1">
+                              <div className="box-border">
+                                <div className={item.nameClass}>{item.name}</div>
+                                <div className={item.titleClass}>{item.title}</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  ) : (
+                    // Desktop: Pair of testimonials
+                    <div className="grid grid-cols-2 gap-6 items-stretch">
+                      {item.map((testimonial) => (
+                        <div key={testimonial.id} className="w-full flex">
+                          <div className={`${testimonial.containerClass} w-full min-h-[500px]`}>
+                            <div className={testimonial.iconContainerClass}>
+                              <img src={testimonial.icon} alt="Quote Icon" className="box-border h-full w-full" />
+                            </div>
+                            <div className="items-start box-border gap-x-2 flex basis-[0%] flex-col grow justify-between gap-y-2 mt-5 font-poppins md:gap-x-8 md:gap-y-8 md:mt-10">
+                              <p className={testimonial.textClass}>{testimonial.quote}</p>
+                              <div className="items-start box-border gap-x-4 flex flex-col justify-center gap-y-4 md:items-center md:gap-x-5 md:flex-row md:justify-start md:gap-y-5">
+                                <img src={testimonial.avatar} alt={testimonial.name} className="aspect-square box-border h-10 max-w-10 align-bottom w-full rounded-[100%] md:h-[74px] md:max-w-[74px]" />
+                                <div className="items-start box-border gap-x-1 flex flex-col justify-start gap-y-1">
+                                  <div className="box-border">
+                                    <div className={testimonial.nameClass}>{testimonial.name}</div>
+                                    <div className={testimonial.titleClass}>{testimonial.title}</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Pagination dots for mobile */}
-      <div className="box-border block md:hidden">
-        <ul className="items-center box-border gap-x-2 flex justify-center gap-y-2 mt-6">
-          {testimonialsData.testimonials.map((_, index) => (
-            <li key={index} className="box-border">
+          {/* Pagination Dots */}
+          <div className="flex justify-center mt-8 gap-3">
+            {items.map((_, index) => (
               <button
+                key={index}
                 onClick={() => goToSlide(index)}
-                className={`cursor-pointer box-border h-2 w-2 rounded-full border-none ${
-                  currentSlide === index ? 'bg-[var(--brand-yellow)]' : 'bg-gray-400'
+                className={`w-3 h-3 rounded-full transition-colors duration-200 ${
+                  currentIndex === index 
+                    ? 'bg-[var(--brand-yellow)]' 
+                    : 'bg-gray-400 hover:bg-gray-300'
                 }`}
-                aria-label={`Go to testimonial ${index + 1}`}
+                aria-label={`Go to ${isMobile ? 'testimonial' : 'testimonial pair'} ${index + 1}`}
               />
-            </li>
-          ))}
-        </ul>
+            ))}
+          </div>
+        </div>
       </div>
       </div>
     </section>

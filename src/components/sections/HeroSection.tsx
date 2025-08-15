@@ -41,7 +41,7 @@ export default function HeroSection() {
             style={{ transform: 'skewX(-15deg)' }}
           ></div>
           <h1 
-            className="relative text-gray-900 text-5xl md:text-8xl font-black uppercase z-10 px-8 py-3"
+            className="relative text-gray-900 text-2xl md:text-8xl font-black uppercase z-10 px-8 py-3 text-center"
             style={{ transform: 'skewX(0deg)' }}
           >
             {heroData.mainTitle.firstPart}
