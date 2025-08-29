@@ -53,7 +53,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          "Geist",
+          "var(--font-poppins)",
+          "Poppins",
           "ui-sans-serif",
           "system-ui",
           "sans-serif",
@@ -62,10 +63,9 @@ const config: Config = {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
-        mono: ["Geist Mono", "monospace"],
+        poppins: ["var(--font-poppins)", "Poppins", "sans-serif"],
+        handwritten: ["var(--font-handwritten)", "Kalam", "cursive"],
         "webflow-icons": ["webflow-icons"],
-        "Poppins": ["Geist", "sans-serif"],
-        "Impact": ["Geist", "sans-serif", "Impact"]
       },
       keyframes: {
         "accordion-down": {

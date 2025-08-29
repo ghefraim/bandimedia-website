@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Kalam } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["700", "800"], // Bold (700) și Extra Bold (800)
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const kalam = Kalam({
+  variable: "--font-handwritten",
   subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-gray-900 text-base font-normal bg-gray-900 min-h-full font-impact`}
+        className={`${poppins.variable} ${kalam.variable} antialiased text-gray-900 text-base font-bold bg-gray-900 min-h-full font-poppins`}
       >
         <div className="box-border">
           <Header />
