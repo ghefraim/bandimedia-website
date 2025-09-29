@@ -15,7 +15,7 @@ export default function TrustedBySection() {
   }, []);
 
   return (
-    <section className="box-border overflow-hidden py-12 md:py-20 bg-[#0b1a10]">
+    <section className="box-border overflow-hidden py-12 md:py-20">
       <div className="box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="text-white items-center box-border flex-col justify-start text-center font-poppins">
