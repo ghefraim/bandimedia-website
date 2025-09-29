@@ -15,7 +15,7 @@ export default function TrustedBySection() {
   }, []);
 
   return (
-    <section className="box-border overflow-hidden py-12 md:py-20">
+    <section className="box-border overflow-hidden py-12 md:pt-10">
       <div className="box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="text-white items-center box-border flex-col justify-start text-center font-poppins">
@@ -34,7 +34,7 @@ export default function TrustedBySection() {
           {trustedBrandsData.brands.map((brand) => (
             <div
               key={brand.id}
-              className="flex-shrink-0 px-2 flex items-center justify-center"
+              className="flex-shrink-0 flex items-center justify-center"
             >
               <img src={brand.logo} alt={brand.name} className={brand.desktopClass} />
               <img src={brand.logo} alt={brand.name} className={brand.mobileClass} />
@@ -45,7 +45,7 @@ export default function TrustedBySection() {
           {trustedBrandsData.brands.map((brand) => (
             <div
               key={`duplicate-${brand.id}`}
-              className="flex-shrink-0 px-6 flex items-center justify-center"
+              className="flex-shrink-0 flex items-center justify-center"
             >
               <img src={brand.logo} alt={brand.name} className={brand.desktopClass} />
               <img src={brand.logo} alt={brand.name} className={brand.mobileClass} />
