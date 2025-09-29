@@ -20,6 +20,6 @@ export const navigationData = {
     { id: 'services', label: 'Servicii', href: '#services' },
     { id: 'work', label: 'Proiecte', href: '#results' },
     { id: 'about', label: 'Despre Noi', href: '/about' },
-    { id: 'blogs', label: 'Blog', href: '/blog' }
+    // { id: 'blogs', label: 'Blog', href: '/blog' }
   ] as const
 } as const; 
