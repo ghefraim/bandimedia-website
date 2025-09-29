@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionTitle from '@/components/ui/SectionTitle';
+import { statsData } from '@/data/statsData';
 
 export default function WhereSection() {
   return (
@@ -24,24 +25,29 @@ export default function WhereSection() {
                 Cu rădăcini în vest, dar idei care ajung oriunde, aducem un mix unic de creativitate locală și viziune globală. Facem deplasări în tot vestul țării, așa că, nu ezita să ne contactezi!
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-[var(--brand-yellow)]">50+</div>
-                <div className="text-sm opacity-80 mt-2">Colaboratori</div>
+            
+             {/* Stats Grid with Enhanced Gradient */}
+        <div className="relative mt-16">
+          {/* Gradient Border Container */}
+          <div className="relative p-[3px] rounded-2xl bg-gradient-to-r from-[var(--brand-yellow)]/40 via-[var(--brand-yellow)]/10 to-[var(--brand-yellow)]/40">
+            <div className="bg-gradient-to-br from-[var(--brand-green-light)]/80 to-background/90 backdrop-blur-sm rounded-2xl p-8 md:p-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                {statsData.map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className={`text-4xl md:text-5xl lg:text-6xl font-black mb-2 ${
+                      stat.highlight ? 'text-[var(--brand-yellow)]' : 'text-white'
+                    }`}>
+                      {stat.number}
+                    </div>
+                    <div className="text-sm md:text-base text-white/80 font-medium uppercase tracking-wide">
+                      {stat.label}
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-[var(--brand-yellow)]">3500+</div>
-                <div className="text-sm opacity-80 mt-2">Postări realizate</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-[var(--brand-yellow)]">5M+</div>
-                <div className="text-sm opacity-80 mt-2">Vizualizări</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-[var(--brand-yellow)]">80+</div>
-                <div className="text-sm opacity-80 mt-2">Evenimente</div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>

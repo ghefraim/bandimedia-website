@@ -1,14 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import SectionTitle from '@/components/ui/SectionTitle';
+import { statsData } from '@/data/statsData';
 
 export default function AboutEffectSection() {
-  const stats = [
-    { number: '50+', label: 'Colaboratori', highlight: true },
-    { number: '3500+', label: 'Postări realizate', highlight: false },
-    { number: '5M+', label: 'Vizualizări', highlight: true },
-    { number: '80+', label: 'Evenimente', highlight: false }
-  ];
+
 
   return (
     <section className="relative bg-gradient-to-br from-background via-background to-[var(--brand-green-light)] text-white py-16 md:py-20 overflow-hidden">
@@ -46,7 +42,7 @@ export default function AboutEffectSection() {
           <div className="relative p-[3px] rounded-2xl bg-gradient-to-r from-[var(--brand-yellow)]/40 via-[var(--brand-yellow)]/10 to-[var(--brand-yellow)]/40">
             <div className="bg-gradient-to-br from-[var(--brand-green-light)]/80 to-background/90 backdrop-blur-sm rounded-2xl p-8 md:p-12">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-                {stats.map((stat, index) => (
+                {statsData.map((stat: any, index: any) => (
                   <div key={index} className="text-center">
                     <div className={`text-4xl md:text-5xl lg:text-6xl font-black mb-2 ${
                       stat.highlight ? 'text-[var(--brand-yellow)]' : 'text-white'
