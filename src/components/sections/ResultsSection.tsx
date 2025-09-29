@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { caseStudiesData } from '@/data/caseStudiesData';
 import SectionTitle from '@/components/ui/SectionTitle';
-
+import Image from 'next/image';
 interface ResultsSectionProps {
   onOpenCaseStudyModal?: () => void;
 }
@@ -13,12 +13,12 @@ export default function ResultsSection({ onOpenCaseStudyModal }: ResultsSectionP
       {/* Repeating B pattern background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="flex justify-between items-end h-full opacity-5">
-          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
         </div>
       </div>
       <div className="relative z-10">
@@ -34,7 +34,7 @@ export default function ResultsSection({ onOpenCaseStudyModal }: ResultsSectionP
                 <Link key={caseStudy.id} href={caseStudy.href} className="relative box-border flex flex-col h-[332px] justify-between max-w-full overflow-hidden rounded-[20px] md:h-[596px] group cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
                   <div className="relative box-border z-[2]">
                     <div className="items-center box-border flex justify-between p-6 md:p-8">
-                      <img alt="" src={caseStudy.logo} className={caseStudy.logoClass} />
+                      <Image alt="" src={caseStudy.logo} className={caseStudy.logoClass} width={400} height={400} />
                     </div>
                   </div>
                   <div className="relative box-border z-[2]">
@@ -59,7 +59,7 @@ export default function ResultsSection({ onOpenCaseStudyModal }: ResultsSectionP
                       ))}
                     </div>
                   </div>
-                  <img src={caseStudy.backgroundImage} alt="" sizes="100vw" className={`${caseStudy.backgroundClass} transition-transform duration-500 group-hover:scale-110`} />
+                  <Image src={caseStudy.backgroundImage} alt="" sizes="100vw" className={`${caseStudy.backgroundClass} transition-transform duration-500 group-hover:scale-110`} width={400} height={400} />
                   <div className="absolute bg-[linear-gradient(rgba(0,0,0,0.6)_0%,rgba(0,0,0,0.12)_25%,rgba(0,0,0,0)_30%,rgba(0,0,0,0)_70%,rgba(0,0,0,0.12)_75%,rgba(0,0,0,0.6)_100%)] box-border z-[1] inset-[0%]"></div>
                 </Link>
               ))}

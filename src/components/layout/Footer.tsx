@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { footerData } from '@/data/footerData';
-
+import Image from 'next/image';
 export default function Footer() {
   const [email, setEmail] = useState('');
   const [showSuccess, setShowSuccess] = useState(false);
@@ -28,7 +28,13 @@ export default function Footer() {
           <div className="box-border pb-0 pb-2">
             <div className="items-center box-border gap-x-12 flex flex-col justify-center gap-y-12 pt-0 md:items-start md:justify-between md:gap-x-[normal] md:flex-row md:gap-y-[normal] ">
               <div className="items-start box-border gap-x-4 flex flex-col justify-start gap-y-4 w-full md:gap-x-6 md:gap-y-6 md:w-[500px]">
-                <img src="/assets/logo.png" alt="" className="box-border max-w-48 w-full md:max-w-[230px]" />
+                <Image 
+                  src="/assets/logo.png" 
+                  alt="" 
+                  className="box-border max-w-48 w-full md:max-w-[230px]" 
+                  width={230}
+                  height={230}
+                />
                 <p className="text-base box-border leading-6 md:text-lg md:leading-[27px]">Alătură-te newsletter-ului nostru pentru a fi la curent cu noutățile și lansările.</p>
                 <div className="box-border w-full">
                   <form 
@@ -101,7 +107,7 @@ export default function Footer() {
                   <div className="text-[var(--brand-yellow)] text-lg box-border leading-[27px]">Urmărește-ne</div>
                   {footerData.socialLinks.map((link) => (
                     <a key={link.id} href={link.href} className="items-center box-border gap-x-3 flex justify-center max-w-full gap-y-3 hover:text-[var(--brand-yellow)] transition-colors md:justify-start" target="_blank" rel="noopener noreferrer">
-                      <img src={link.icon} alt="" className="box-border max-w-6 w-full" />
+                      <Image src={link.icon} alt="" className="box-border max-w-6 w-full" width={24} height={24} />
                       <div className="box-border">{link.label}</div>
                     </a>
                   ))}

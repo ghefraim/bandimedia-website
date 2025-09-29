@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { trustedBrandsData } from '@/data/trustedBrandsData';
-
+import Image from 'next/image';
 export default function TrustedBySection() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [duration, setDuration] = useState(60); // fallback default
@@ -36,8 +36,8 @@ export default function TrustedBySection() {
               key={brand.id}
               className="flex-shrink-0 flex items-center justify-center"
             >
-              <img src={brand.logo} alt={brand.name} className={brand.desktopClass} />
-              <img src={brand.logo} alt={brand.name} className={brand.mobileClass} />
+              <Image   src={brand.logo} alt={brand.name} className={brand.desktopClass} width={400} height={400} />
+              <Image src={brand.logo} alt={brand.name} className={brand.mobileClass} width={400} height={400} />
             </div>
           ))}
 
@@ -47,8 +47,8 @@ export default function TrustedBySection() {
               key={`duplicate-${brand.id}`}
               className="flex-shrink-0 flex items-center justify-center"
             >
-              <img src={brand.logo} alt={brand.name} className={brand.desktopClass} />
-              <img src={brand.logo} alt={brand.name} className={brand.mobileClass} />
+              <Image src={brand.logo} alt={brand.name} className={brand.desktopClass} width={400} height={400} />
+              <Image src={brand.logo} alt={brand.name} className={brand.mobileClass} width={400} height={400} />
             </div>
           ))}
         </div>

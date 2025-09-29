@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionTitle from '@/components/ui/SectionTitle';
+import Image from 'next/image';
 
 export default function AboutTeamSection() {
   const teamMembers = [
@@ -89,10 +90,12 @@ export default function AboutTeamSection() {
             <div key={index} className="text-center group">
               {/* Profile Image */}
               <div className="relative mb-4 overflow-hidden rounded-lg aspect-square">
-                <img 
+                <Image
                   src={member.image}
                   alt={member.name}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  width={400}
+                  height={400}
                 />
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-[var(--brand-yellow)]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

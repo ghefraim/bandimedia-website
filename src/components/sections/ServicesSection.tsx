@@ -1,6 +1,6 @@
 import React from 'react';
 import { servicesData } from '@/data/servicesData';
-
+import Image from 'next/image';
 export default function ServicesSection() {
   return (
     <section id="services" className="box-border overflow-hidden py-16 md:overflow-visible md:py-20">
@@ -29,7 +29,9 @@ export default function ServicesSection() {
                     {/* Image Container */}
                     <div className="flex-shrink-0">
                       <div className="w-full h-40 md:w-[300px] md:h-[200px] flex items-center justify-center">
-                        <img 
+                        <Image
+                          width={400}
+                          height={400}
                           src={service.image} 
                           alt={service.title}
                           className="w-full h-full object-cover rounded-2xl"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { heroData } from '@/data/heroData';
-
+import Image from 'next/image';
 // High-quality images for the hero collage
 const heroImages = [
   "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80",
@@ -23,10 +23,12 @@ export default function HeroSection() {
               key={index} 
               className="flex-1 h-full min-w-0"
             >
-              <img 
+              <Image 
                 src={image} 
                 alt={`Hero image ${index + 1}`} 
                 className="h-full w-full object-cover"
+                width={600}
+                height={400}
               />
             </div>
           ))}

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { testimonialsData, type Testimonial } from '@/data/testimonialsData';
-
+import Image from 'next/image';
 export default function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
@@ -43,13 +43,13 @@ export default function TestimonialsSection() {
       {/* Repeating B pattern background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="flex justify-between items-end h-full opacity-5">
-          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
-          <img src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" />
+          <Image src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
+          <Image src="/B-black.svg" alt="" className="h-full w-auto max-h-[400px] object-contain" width={400} height={400} />
         </div>
       </div>
       <div className="relative z-10">
@@ -107,14 +107,14 @@ export default function TestimonialsSection() {
                     <div className="w-full flex justify-center">
                       <div className={`${(item as Testimonial).containerClass.replace('justify-start', 'justify-center')} w-full min-h-[400px] max-w-md`}>
                         <div className={(item as Testimonial).iconContainerClass}>
-                          <img src={(item as Testimonial).icon} alt="Quote Icon" className="box-border h-full w-full" />
+                          <Image width={400} height={400} src={(item as Testimonial).icon} alt="Quote Icon" className="box-border h-full w-full" />
                         </div>
                         <div className="items-start box-border gap-x-2 flex basis-[0%] flex-col grow justify-between gap-y-2 mt-5 font-poppins md:gap-x-8 md:gap-y-8 md:mt-10">
                           <div className="flex flex-col justify-center flex-grow">
                             <p className={(item as Testimonial).textClass}>{(item as Testimonial).quote}</p>
                           </div>
                           <div className="items-start box-border gap-x-4 flex flex-col justify-center gap-y-4 md:items-center md:gap-x-5 md:flex-row md:justify-start md:gap-y-5">
-                            <img src={(item as Testimonial).avatar} alt={(item as Testimonial).name} className="aspect-square box-border h-10 max-w-10 align-bottom w-full rounded-[100%] md:h-[74px] md:max-w-[74px]" />
+                            <Image width={400} height={400} src={(item as Testimonial).avatar} alt={(item as Testimonial).name} className="aspect-square box-border h-10 max-w-10 align-bottom w-full rounded-[100%] md:h-[74px] md:max-w-[74px]" />
                             <div className="items-start box-border gap-x-1 flex flex-col justify-start gap-y-1">
                               <div className="box-border">
                                 <div className={(item as Testimonial).nameClass}>{(item as Testimonial).name}</div>
@@ -132,14 +132,14 @@ export default function TestimonialsSection() {
                         <div key={testimonial.id} className="w-full flex">
                           <div className={`${testimonial.containerClass.replace('justify-start', 'justify-center')} w-full min-h-[500px]`}>
                             <div className={testimonial.iconContainerClass}>
-                              <img src={testimonial.icon} alt="Quote Icon" className="box-border h-full w-full" />
+                              <Image width={400} height={400} src={testimonial.icon} alt="Quote Icon" className="box-border h-full w-full" />
                             </div>
                             <div className="items-start box-border gap-x-2 flex basis-[0%] flex-col grow justify-between gap-y-2 mt-5 font-poppins md:gap-x-8 md:gap-y-8 md:mt-10">
                               <div className="flex flex-col justify-center flex-grow">
                                 <p className={testimonial.textClass}>{testimonial.quote}</p>
                               </div>
                               <div className="items-start box-border gap-x-4 flex flex-col justify-center gap-y-4 md:items-center md:gap-x-5 md:flex-row md:justify-start md:gap-y-5">
-                                <img src={testimonial.avatar} alt={testimonial.name} className="aspect-square box-border h-10 max-w-10 align-bottom w-full rounded-[100%] md:h-[74px] md:max-w-[74px]" />
+                                <Image width={400} height={400} src={testimonial.avatar} alt={testimonial.name} className="aspect-square box-border h-10 max-w-10 align-bottom w-full rounded-[100%] md:h-[74px] md:max-w-[74px]" />
                                 <div className="items-start box-border gap-x-1 flex flex-col justify-start gap-y-1">
                                   <div className="box-border">
                                     <div className={testimonial.nameClass}>{testimonial.name}</div>
