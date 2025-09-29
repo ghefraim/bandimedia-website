@@ -6,12 +6,12 @@ import AboutEffectSection from '@/components/sections/AboutEffectSection';
 import AboutTeamSection from '@/components/sections/AboutTeamSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import CTASection from '@/components/sections/CTASection';
-import HeroSection from '@/components/sections/HeroSection';
+import AboutHeroSection from '@/components/sections/AboutHeroSection';
 
 export default function About() {
   return (
     <>
-      <HeroSection />
+      <AboutHeroSection />
       <TrustedBySection />
       <div className="bg-slate-200 box-border">
         <AboutStorySection />

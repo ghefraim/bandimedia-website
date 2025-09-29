@@ -7,7 +7,7 @@ export default function AboutEffectSection() {
 
 
   return (
-    <section className="relative bg-gradient-to-br from-background via-background to-[var(--brand-green-light)] text-white py-16 md:py-20 overflow-hidden">
+    <section className="relative text-white py-16 md:py-20 overflow-hidden">
       <div className="max-w-[1312px] mx-auto px-5 md:px-10">
         {/* Section Title */}
         <div className="mb-12 md:mb-16">

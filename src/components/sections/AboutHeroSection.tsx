@@ -12,7 +12,7 @@ const heroImages = [
   "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80"
 ];
 
-export default function HeroSection() {
+export default function AboutHeroSection() {
   return (
     <section className="relative  ">
       {/* Fixed height image strip */}
@@ -45,26 +45,10 @@ export default function HeroSection() {
           <h1
             className="relative text-gray-900 text-2xl md:text-8xl font-black uppercase z-10 px-8 py-3 text-center tracking-[-0.05em]"
           >
-            {heroData.mainTitle.firstPart}
+           {heroData.mainTitle.firstPart}
             <br />
             {heroData.mainTitle.secondPart}
           </h1>
-        </div>
-      </div>
-      
-      {/* Hero Content */}
-      <div className="relative px-5 py-12 md:px-10 md:py-20">
-        <div className="max-w-[1312px] mx-auto text-center">
-          <h2
-            className="text-white text-2xl md:text-4xl mb-6 font-black tracking-[-0.02em]"
-          >
-            {heroData.subtitle}
-          </h2>
-          <p
-            className="text-white/60 text-base md:text-lg max-w-4xl mx-auto leading-snug tracking-tight font-normal"
-          >
-            {heroData.description}
-          </p>
         </div>
       </div>
     </section>
