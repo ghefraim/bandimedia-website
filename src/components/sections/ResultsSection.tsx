@@ -31,7 +31,7 @@ export default function ResultsSection({ onOpenCaseStudyModal }: ResultsSectionP
             />
             <div className="box-border gap-x-8 grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-8 mt-16 md:grid-cols-[1fr_1fr_1fr]">
               {caseStudiesData.cases.map((caseStudy) => (
-                <Link key={caseStudy.id} href={caseStudy.href} className="relative box-border flex flex-col h-[332px] justify-between max-w-full overflow-hidden rounded-[20px] md:h-[596px]">
+                <Link key={caseStudy.id} href={caseStudy.href} className="relative box-border flex flex-col h-[332px] justify-between max-w-full overflow-hidden rounded-[20px] md:h-[596px] group cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
                   <div className="relative box-border z-[2]">
                     <div className="items-center box-border flex justify-between p-6 md:p-8">
                       <img alt="" src={caseStudy.logo} className={caseStudy.logoClass} />
@@ -59,7 +59,7 @@ export default function ResultsSection({ onOpenCaseStudyModal }: ResultsSectionP
                       ))}
                     </div>
                   </div>
-                  <img src={caseStudy.backgroundImage} alt="" sizes="100vw" className={caseStudy.backgroundClass} />
+                  <img src={caseStudy.backgroundImage} alt="" sizes="100vw" className={`${caseStudy.backgroundClass} transition-transform duration-500 group-hover:scale-110`} />
                   <div className="absolute bg-[linear-gradient(rgba(0,0,0,0.6)_0%,rgba(0,0,0,0.12)_25%,rgba(0,0,0,0)_30%,rgba(0,0,0,0)_70%,rgba(0,0,0,0.12)_75%,rgba(0,0,0,0.6)_100%)] box-border z-[1] inset-[0%]"></div>
                 </Link>
               ))}
