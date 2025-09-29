@@ -80,8 +80,8 @@ export default function ContactInfoSection() {
             </div>
             
             <div className="mt-6 p-4 bg-[var(--brand-yellow)]/10 rounded-lg">
-              <p className="text-gray-700 font-geist font-normal tracking-wide">
-                <strong>Cum să ne găsești:</strong> Suntem localizați în centrul Oradei, 
+              <p className="text-gray-700 font-normal tracking-tight">
+                <strong>Cum să ne găsești:</strong> Suntem localizați în centrul Oradei,
                 cu acces ușor la transport public și parcare disponibilă în zonă.
               </p>
             </div>

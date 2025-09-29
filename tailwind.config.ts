@@ -53,8 +53,9 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          "var(--font-poppins)",
-          "Poppins",
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
           "ui-sans-serif",
           "system-ui",
           "sans-serif",
@@ -63,6 +64,7 @@ const config: Config = {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+        helvetica: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
         poppins: ["var(--font-poppins)", "Poppins", "sans-serif"],
         handwritten: ["var(--font-handwritten)", "Kalam", "cursive"],
         "webflow-icons": ["webflow-icons"],

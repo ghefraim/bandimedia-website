@@ -24,10 +24,10 @@ export default function ContactEffectSection() {
         
         {/* Description */}
         <div className="mb-12 md:mb-16 text-center">
-          <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-white/90 font-geist font-normal tracking-wide mb-6">
+          <p className="text-lg md:text-xl leading-snug max-w-4xl mx-auto text-white/90 font-medium tracking-tight mb-6">
             Știm cum să combinăm perspectivele strategice cu excelența creativă pentru a crea un impact de durată.
           </p>
-          <p className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-white/70 font-geist font-normal tracking-wide">
+          <p className="text-base md:text-lg leading-snug max-w-3xl mx-auto text-white/70 font-normal tracking-tight">
             Ca agenția voastră globală de social premiată, suntem aici să schimbăm narațiunea.
           </p>
           

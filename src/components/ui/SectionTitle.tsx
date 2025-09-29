@@ -19,7 +19,10 @@ export default function SectionTitle({ title, subtitle, align = 'center', subtit
     <div className={`items-center box-border flex flex-col justify-start ${alignmentClasses[align]}`}>
       {/* Main title with yellow background */}
       <div className={`relative inline-block mb-2 ${invertOrder ? 'order-2' : ''}`}>
-        <h2 className="relative text-black text-[32px] box-border leading-[35.2px] z-10 px-6 py-2 md:text-[64px] md:leading-[70.4px]">
+        <h2
+          className="relative font-black text-black text-[32px] box-border leading-[28px] z-10 px-6 py-2 md:text-[64px] md:leading-[60px] tracking-tighter"
+          style={{ fontWeight: '950', letterSpacing: '-0.05em', textShadow: '0 0 1px rgba(0,0,0,0.8)' }}
+        >
           {title}
         </h2>
         <div
@@ -30,7 +33,10 @@ export default function SectionTitle({ title, subtitle, align = 'center', subtit
 
       {/* Subtitle if provided */}
       {subtitle && (
-        <h2 className={`${subtitleClassName || 'text-black'} text-[32px] box-border leading-[35.2px] md:text-[64px] md:leading-[70.4px]`}>
+        <h2
+          className={`${subtitleClassName || 'text-black'} text-[32px] box-border leading-[28px] md:text-[64px] md:leading-[60px] tracking-tighter`}
+          style={{ fontWeight: '950', letterSpacing: '-0.05em', textShadow: '0 0 1px rgba(0,0,0,0.8)' }}
+        >
           {subtitle}
         </h2>
       )}

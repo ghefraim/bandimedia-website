@@ -22,7 +22,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="text-white bg-none bg-repeat bg-auto box-border bg-left font-poppins">
+    <footer className="text-white bg-none bg-repeat bg-auto box-border bg-left font-normal">
       <div className="box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="box-border pb-0 pb-2">

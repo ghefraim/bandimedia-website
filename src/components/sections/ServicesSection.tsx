@@ -10,7 +10,7 @@ export default function ServicesSection() {
             <div className="box-border max-w-[300px] w-full mx-auto md:max-w-none md:w-[854px]">
               {/* Custom title without yellow background */}
               <div  className="items-center box-border flex flex-col justify-start text-center">
-                <h2 className="text-black text-[32px] box-border leading-[35.2px] md:text-[64px] md:leading-[70.4px]">
+                <h2 className="text-black text-[32px] box-border leading-[35.2px] md:text-[64px] md:leading-[70.4px] font-black tracking-tighter">
                   SERVICIILE PE CARE ȚI LE PUTEM OFERI
                 </h2>
               </div>
@@ -23,7 +23,7 @@ export default function ServicesSection() {
                     <div className="items-start box-border gap-x-8 flex justify-start gap-y-8 md:items-center md:gap-x-[normal] md:gap-y-[normal]">
                       <h3 className="text-[28px] box-border leading-[33.6px] md:text-5xl md:leading-[57.6px]">{service.title}</h3>
                     </div>
-                    <p className="text-base box-border leading-6 md:text-lg md:leading-[28.8px]">{service.description}</p>
+                    <p className="text-base box-border leading-5 md:text-lg md:leading-[28.8px] font-normal">{service.description}</p>
                   </div>
                 </div>
               ))}

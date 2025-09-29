@@ -56,8 +56,8 @@ export default function ContactHeroSection() {
               </h1>
             </div>
             
-            <p className="text-lg md:text-xl leading-relaxed text-white/90 font-geist font-normal tracking-wide mb-8">
-              Suntem aici să transformăm ideile tale în campanii de succes. 
+            <p className="text-lg md:text-xl leading-snug text-white/90 font-normal tracking-tight mb-8">
+              Suntem aici să transformăm ideile tale în campanii de succes.
               Completează formularul și hai să discutăm despre cum putem să-ți aducem visurile la realitate.
             </p>
 

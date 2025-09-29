@@ -19,7 +19,7 @@ export default function TrustedBySection() {
       <div className="box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="text-white items-center box-border flex-col justify-start text-center font-poppins">
-            <p className="box-border mb-8 text-lg">Aleși de Branduri care Contează</p>
+            <p className="box-border uppercase text-white text-xl md:text-2xl mb-6 tracking-[-0.02em]">Aleși de Branduri care Contează</p>
           </div>
         </div>
       </div>

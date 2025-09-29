@@ -1,15 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins, Kalam } from "next/font/google";
+import { Kalam } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["700", "800"], // Bold (700) și Extra Bold (800)
-  display: "swap",
-});
 
 const kalam = Kalam({
   variable: "--font-handwritten",
@@ -31,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${kalam.variable} antialiased text-gray-900 text-base font-bold bg-gray-900 min-h-full font-poppins`}
+        className={`${kalam.variable} antialiased text-gray-900 text-base font-semibold bg-gray-900 min-h-full font-helvetica`}
       >
         <div className="box-border">
           <Header />

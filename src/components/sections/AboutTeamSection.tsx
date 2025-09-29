@@ -76,7 +76,7 @@ export default function AboutTeamSection() {
         
         {/* Description */}
         <div className="mb-12 md:mb-16 text-center">
-          <p className="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-white/90 font-poppins tracking-wide">
+          <p className="text-lg md:text-xl leading-snug max-w-4xl mx-auto text-white/90 font-normal tracking-tight">
             Acum cu o familie în creștere de mai mult de 70 de oameni pasionați, distractivi și cu un talent uriaș, 
             demontăm stereotipurile și împărtășim perspective noi. Pentru branduri și destinații renumite din întreaga lume, 
             creăm experiențe care contează.

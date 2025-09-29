@@ -23,8 +23,8 @@ export const heroData = {
   ] as const,
   
   mainTitle:{
-    firstPart: 'SPUNEM POVEȘTI CARE NU POT',
-    secondPart: 'FI TRECUTE CU VEDEREA',
+    firstPart: 'SPUNEM POVEȘTI CARE NU',
+    secondPart: 'POT FI TRECUTE CU VEDEREA',
   },
   subtitle: 'AGENȚIE DE SOCIAL MEDIA MARKETING',
   description: `Suntem echipa care transformă ideile în campanii care se fac văzute, auzite și simțite. Creăm conținut care stârnește reacții, gestionăm conturi de social media care cresc comunități și punem brandurile în lumina pe care o merită. Fiecare postare e o poveste, iar fiecare poveste îți aduce publicul mai aproape.`
