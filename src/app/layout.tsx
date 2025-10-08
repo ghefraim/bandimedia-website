@@ -28,13 +28,9 @@ export default function RootLayout({
         className={`${kalam.variable} antialiased text-gray-900 text-base font-semibold bg-gray-900 min-h-full font-helvetica`}
       >
         <div className="box-border">
-          <Header />
           <main className="box-border">
             {children}
           </main>
-          <div className="box-border pt-8 " style={{ borderTop: '4px solid var(--brand-yellow)' }}>
-            <Footer />
-          </div>
         </div>
         <Analytics />
       </body>
