@@ -33,16 +33,16 @@ export default function Header() {
             </nav>
 
             {/* Mobile Menu Dropdown */}
-            <div className={`absolute top-full left-0 w-full bg-background border-t border-white/10 z-[999] md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            <div className={`absolute top-full left-0 w-full bg-background border-t shadow-xl border-white/10 z-[999] md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
               isMobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
             }`}>
-              <div className="p-4">
-                <div className="grid grid-cols-3 gap-2">
+              <div className="flex flex-col p-6 items-center">
+                <div className="flex flex-col gap-4  items-center">
                   {navigationData.mainNav.map((item) => (
                     <Link 
                       key={item.id} 
                       href={item.href} 
-                      className="text-white text-sm font-poppins hover:text-[var(--brand-yellow)] transition-colors py-3 px-2 text-center rounded-lg hover:bg-white/5"
+                      className="text-white text-lg font-poppins hover:text-[var(--brand-yellow)] transition-colors py-2 border-b border-gray-700 last:border-b-0 text-center"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.label}
@@ -50,6 +50,7 @@ export default function Header() {
                   ))}
                 </div>
               </div>
+              <div className="h-1 w-full bg-[var(--brand-yellow)]"></div>
             </div>
             <div 
               aria-label="menu" 
