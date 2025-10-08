@@ -43,7 +43,7 @@ export default function HeroSection() {
             style={{ transform: 'skewX(-15deg)' }}
           ></div>
           <h1
-            className="relative text-gray-900 text-xl md:text-6xl font-black uppercase z-10 px-6 py-2 text-center tracking-[-0.04em]"
+            className="relative text-gray-900 text-xl min-[400px]:text-2xl md:text-6xl font-black uppercase z-10 px-6 py-2 text-center tracking-[-0.05em]"
           >
             {heroData.mainTitle.firstPart}
             <br />
@@ -53,15 +53,15 @@ export default function HeroSection() {
       </div>
       
       {/* Hero Content */}
-      <div className="relative px-5 py-12 md:px-10 md:py-20">
+      <div className="relative px-5 pt-10 pb-6 md:px-10 md:pt-14 md:pb-8">
         <div className="max-w-[1312px] mx-auto text-center">
           <h2
-            className="text-white text-2xl md:text-4xl mb-6 font-black tracking-[-0.02em]"
+            className="text-white text-xl min-[400px]:text-2xl md:text-5xl mb-5 font-black tracking-[-0.02em]"
           >
             {heroData.subtitle}
           </h2>
           <p
-            className="text-white/60 text-base md:text-lg max-w-4xl mx-auto leading-snug tracking-tight font-normal"
+            className="text-white/60 text-base md:text-lg max-w-3xl mx-auto leading-snug tracking-tight font-normal"
           >
             {heroData.description}
           </p>

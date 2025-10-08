@@ -15,11 +15,11 @@ export default function TrustedBySection() {
   }, []);
 
   return (
-    <section className="box-border overflow-hidden py-12 md:pt-10">
+    <section className="box-border overflow-hidden pt-6 pb-10 md:pt-6 md:pb-12">
       <div className="box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="text-white items-center box-border flex-col justify-start text-center font-poppins">
-            <p className="box-border uppercase text-white text-xl md:text-2xl mb-6 tracking-[-0.02em]">Aleși de Branduri care Contează</p>
+            <p className="box-border uppercase text-white text-base md:text-lg font-normal mb-4 tracking-[-0.01em]">Aleși de Branduri care Contează</p>
           </div>
         </div>
       </div>
