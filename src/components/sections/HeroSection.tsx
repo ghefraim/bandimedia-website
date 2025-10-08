@@ -16,7 +16,7 @@ export default function HeroSection() {
   return (
     <section className="relative  ">
       {/* Fixed height image strip */}
-      <div className="relative w-full h-[200px] md:h-[350px] overflow-hidden">
+      <div className="relative w-full h-[320px] md:h-[560px] overflow-hidden">
         <div className="flex h-full w-full">
           {heroImages.map((image, index) => (
             <div 
@@ -35,15 +35,15 @@ export default function HeroSection() {
         </div>
       </div>
       
-      {/* "NEVER DO NORMAL" Banner - positioned to overlap */}
-      <div className="relative z-10 flex justify-center -mt-8 md:-mt-12">
+      {/*  Banner - positioned to overlap (smaller + less overlap) */}
+      <div className="relative z-10 flex justify-center -mt-6 md:-mt-10">
         <div className="relative inline-block">
           <div 
             className="absolute inset-0 bg-[var(--brand-yellow)] z-0"
             style={{ transform: 'skewX(-15deg)' }}
           ></div>
           <h1
-            className="relative text-gray-900 text-2xl md:text-8xl font-black uppercase z-10 px-8 py-3 text-center tracking-[-0.05em]"
+            className="relative text-gray-900 text-xl md:text-6xl font-black uppercase z-10 px-6 py-2 text-center tracking-[-0.04em]"
           >
             {heroData.mainTitle.firstPart}
             <br />
