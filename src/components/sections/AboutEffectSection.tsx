@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 import SectionTitle from '@/components/ui/SectionTitle';
+import CTAButton from '@/components/ui/CTAButton';
 import { statsData } from '@/data/statsData';
 
 export default function AboutEffectSection() {
@@ -30,9 +30,7 @@ export default function AboutEffectSection() {
           
           {/* CTA Button */}
           <div className="mt-8">
-            <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] hover:bg-[var(--brand-yellow-hover)] text-black box-border block leading-6 text-center px-5 py-2 rounded-[100px] font-poppins md:text-lg md:inline-block md:leading-[27px]">
-              Contactează-ne
-            </Link>
+            <CTAButton href="/contact">Contactează-ne</CTAButton>
           </div>
         </div>
 

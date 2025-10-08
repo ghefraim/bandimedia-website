@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionTitle from '@/components/ui/SectionTitle';
+import CTAButton from '@/components/ui/CTAButton';
 import { statsData } from '@/data/statsData';
 
 export default function ContactEffectSection() {
@@ -25,13 +26,7 @@ export default function ContactEffectSection() {
           <p className="text-base md:text-lg leading-snug max-w-3xl mx-auto text-white/70 font-normal tracking-tight">
             Ca agenția voastră globală de social premiată, suntem aici să schimbăm narațiunea.
           </p>
-          
-          {/* CTA Button */}
-          <div className="mt-8">
-            <button className="bg-[var(--brand-yellow)] text-black font-bold px-8 py-3 text-lg hover:bg-[var(--brand-yellow-hover)] transition-colors">
-              Să discutăm
-            </button>
-          </div>
+         
         </div>
 
         {/* Stats Grid with Enhanced Gradient */}

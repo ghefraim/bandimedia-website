@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { navigationData } from '@/data/navigationData';
 import Image from 'next/image';
+import CTAButton from '@/components/ui/CTAButton';
 export default function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,10 +26,10 @@ export default function Header() {
                 ))}
               </div>
               <div className="items-stretch box-border flex flex-col justify-start min-h-0 min-w-0 md:[align-items:normal] md:block md:flex-row md:justify-normal md:min-h-[auto] md:min-w-[auto]">
-               <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] hover:bg-[var(--brand-yellow-hover)] text-black box-border block leading-6 text-center  px-5 py-2 rounded-[100px] font-poppins md:text-lg md:inline-block md:leading-[27px]">
+               <CTAButton href="/contact">
                  <span className="md:hidden">Contact</span>
                  <span className="hidden md:inline">Contactează-ne</span>
-               </Link>
+               </CTAButton>
               </div>
             </nav>
 
@@ -65,10 +66,10 @@ export default function Header() {
               </div>
             </div>
             <div className="items-stretch box-border flex flex-col justify-start min-h-[auto] min-w-[auto] md:[align-items:normal] md:hidden md:flex-row md:justify-normal md:min-h-0 md:min-w-0">
-            <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] hover:bg-[var(--brand-yellow-hover)] text-black box-border block leading-6 text-center  px-3 py-2 rounded-[100px] font-poppins md:text-lg md:inline-block md:leading-[27px]">
+            <CTAButton href="/contact" className="px-3">
               <span className="md:hidden">Contact</span>
               <span className="hidden md:inline">Contactează-ne</span>
-            </Link>
+            </CTAButton>
              
               {/* <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] box-border block leading-6 min-h-[auto] min-w-[auto] text-center border border-[var(--brand-yellow)] px-5 py-2 rounded-[100px] border-solid font-poppins md:text-lg md:inline-block md:leading-[27px] md:min-h-0 md:min-w-0">Contactează-ne</Link> */}
             </div>

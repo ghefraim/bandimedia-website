@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SectionTitle from '@/components/ui/SectionTitle';
+import CTAButton from '@/components/ui/CTAButton';
 
 export default function ContactHeroSection() {
   const [formData, setFormData] = useState({
@@ -223,15 +224,11 @@ export default function ContactHeroSection() {
               )}
 
               {/* Submit Button */}
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={`w-full font-bold py-4 px-6 rounded-xl transition-all duration-200 transform shadow-lg ${
-                  isSubmitting
-                    ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
-                    : 'bg-[var(--brand-yellow)] text-black hover:bg-[var(--brand-yellow-hover)] hover:scale-[1.02] hover:shadow-xl'
-                }`}
-              >
+              <div className="flex justify-end">
+                <CTAButton
+                  type="submit"
+                  disabled={isSubmitting}
+                >
                 {isSubmitting ? (
                   <div className="flex items-center justify-center space-x-2">
                     <div className="w-5 h-5 border-2 border-gray-400 border-t-transparent rounded-full animate-spin"></div>
@@ -240,7 +237,8 @@ export default function ContactHeroSection() {
                 ) : (
                   'Trimite Propunerea'
                 )}
-              </button>
+              </CTAButton>
+              </div>
             </form>
           </div>
         </div>
