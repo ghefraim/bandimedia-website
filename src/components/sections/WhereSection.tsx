@@ -28,26 +28,23 @@ export default function WhereSection() {
             
              {/* Stats Grid with Enhanced Gradient */}
         <div className="relative mt-16">
-          {/* Gradient Border Container */}
-          <div className="relative p-[3px] rounded-2xl bg-gradient-to-r from-[var(--brand-yellow)]/40 via-[var(--brand-yellow)]/10 to-[var(--brand-yellow)]/40">
-            <div className="bg-gradient-to-br from-[var(--brand-green-light)]/80 to-background/90 backdrop-blur-sm rounded-2xl p-8 md:p-12">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-                {statsData.map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className={`text-4xl md:text-5xl lg:text-6xl font-black mb-2 ${
-                      stat.highlight ? 'text-[var(--brand-yellow)]' : 'text-white'
-                    }`}>
-                      {stat.number}
-                    </div>
-                    <div className="text-sm md:text-base text-white/80 font-medium uppercase tracking-wide">
-                      {stat.label}
-                    </div>
+          <div className="bg-gradient-to-br from-[var(--brand-green-light)]/80 to-background/90 backdrop-blur-sm rounded-2xl p-8 md:p-12">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+              {statsData.map((stat, index) => (
+                <div key={index} className="text-center">
+                  <div className={`text-4xl md:text-5xl lg:text-6xl font-black mb-2 ${
+                    stat.highlight ? 'text-[var(--brand-yellow)]' : 'text-white'
+                  }`}>
+                    {stat.number}
                   </div>
-                ))}
-              </div>
-              </div>
+                  <div className="text-sm md:text-base text-white/80 font-medium uppercase tracking-wide">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
+        </div>
           </div>
         </div>
       </div>
