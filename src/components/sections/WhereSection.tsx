@@ -19,7 +19,7 @@ export default function WhereSection() {
       <div className="relative z-10 box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
           <div className="box-border text-center">
-            <SectionTitle title="VESTUL ROMÂNIEI" subtitle="SUNTEM ÎN" subtitleClassName="text-white" invertOrder={true}/>
+            <SectionTitle title="VESTUL ROMÂNIEI" subtitle="SUNTEM ÎN" subtitleClassName="text-white font-normal" invertOrder={true} />
             <div className="mt-12">
               <p className="text-lg leading-relaxed max-w-4xl mx-auto">
                 Cu rădăcini în vest, dar idei care ajung oriunde, aducem un mix unic de creativitate locală și viziune globală. Facem deplasări în tot vestul țării, așa că, nu ezita să ne contactezi!

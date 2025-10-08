@@ -1,6 +1,7 @@
 import React from 'react';
 import { servicesData } from '@/data/servicesData';
 import Image from 'next/image';
+import SectionTitle from '../ui/SectionTitle';
 export default function ServicesSection() {
   return (
     <section id="services" className="box-border overflow-hidden py-16 md:overflow-visible md:py-20">
@@ -10,9 +11,12 @@ export default function ServicesSection() {
             <div className="box-border max-w-[300px] w-full mx-auto md:max-w-none md:w-[854px]">
               {/* Custom title without yellow background */}
               <div  className="items-center box-border flex flex-col justify-start text-center">
-                <h2 className="text-black text-[32px] box-border leading-[35.2px] md:text-[64px] md:leading-[70.4px] font-black tracking-tighter">
-                  SERVICIILE PE CARE ȚI LE PUTEM OFERI
-                </h2>
+                {/* <h2 className="text-black text-[32px] box-border leading-[35.2px] md:text-[64px] md:leading-[70.4px] font-black tracking-tighter">
+                  SERVICIILE PE CARE ȚI LE
+                  <br />
+                  PUTEM OFERI
+                </h2> */}
+                <SectionTitle title="SERVICIILE PE CARE ȚI LE" subtitle="PUTEM OFERI" />
               </div>
             </div>
             <div className="flex flex-col gap-10 w-full mt-16 max-w-[1200px] mx-auto md:mt-20">

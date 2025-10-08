@@ -1,14 +1,16 @@
 import React from 'react';
+import { cn } from '@/lib/utils.js';
 
 interface SectionTitleProps {
   title: string;
   subtitle?: string;
   align?: 'center' | 'left' | 'right';
   subtitleClassName?: string;
+  titleClassName?: string;
   invertOrder?: boolean;
 }
 
-export default function SectionTitle({ title, subtitle, align = 'center', subtitleClassName, invertOrder = false }: SectionTitleProps) {
+export default function SectionTitle({ title, subtitle, align = 'center', subtitleClassName, titleClassName, invertOrder = false }: SectionTitleProps) {
   const alignmentClasses = {
     center: 'text-center',
     left: 'text-left',
@@ -20,7 +22,7 @@ export default function SectionTitle({ title, subtitle, align = 'center', subtit
       {/* Main title with yellow background */}
       <div className={`relative inline-block mb-2 ${invertOrder ? 'order-2' : ''}`}>
         <h2
-          className="relative font-black text-black text-[32px] box-border leading-[28px] z-10 px-6 py-2 md:text-[64px] md:leading-[60px] tracking-[-0.05em]"
+          className={cn("relative font-black text-black text-[32px] box-border leading-[28px] z-10 px-6 py-2 md:text-[64px] md:leading-[60px] tracking-[-0.05em]", titleClassName)}
         >
           {title}
         </h2>
@@ -33,7 +35,7 @@ export default function SectionTitle({ title, subtitle, align = 'center', subtit
       {/* Subtitle if provided */}
       {subtitle && (
         <h2
-          className={`${subtitleClassName || 'text-black'} text-[32px] box-border leading-[28px] md:text-[64px] md:leading-[60px] tracking-[-0.05em]`}
+          className={cn("text-black text-[32px] box-border leading-[28px] md:text-[64px] md:leading-[60px] tracking-[-0.05em]", subtitleClassName)}
         >
           {subtitle}
         </h2>

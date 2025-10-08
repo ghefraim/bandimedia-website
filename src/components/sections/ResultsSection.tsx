@@ -27,7 +27,8 @@ export default function ResultsSection({ onOpenCaseStudyModal }: ResultsSectionP
           <div className="box-border">
             <SectionTitle 
               title="REZULTATE OBȚINUTE" 
-              subtitle="PENTRU PARTENERII NOȘTRI" 
+              subtitle="PENTRU PARTENERII NOȘTRI"
+              subtitleClassName="font-normal"
             />
             <div className="box-border gap-x-8 grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-8 mt-16 md:grid-cols-[1fr_1fr_1fr]">
               {caseStudiesData.cases.map((caseStudy) => (
@@ -64,9 +65,9 @@ export default function ResultsSection({ onOpenCaseStudyModal }: ResultsSectionP
                 </Link>
               ))}
             </div>
-            <div className="items-center box-border flex justify-center mt-12 md:mt-20">
-              <Link href="/work" className="text-white text-base font-bold bg-gray-900 box-border block leading-6 text-center border border-gray-900 px-5 py-2 rounded-[100px] border-solid font-poppins md:text-lg md:leading-[27px]">View All Work</Link>
-            </div>
+            {/* <div className="items-center box-border flex justify-center mt-12 md:mt-20">
+              <Link href="/work" className="text-white text-base font-bold bg-gray-900 box-border block leading-6 text-center border border-gray-900 px-5 py-2 rounded-[100px] border-solid font-poppins md:text-lg md:leading-[27px]">Vezi toate lucrările</Link>
+            </div> */}
           </div>
         </div>
       </div>

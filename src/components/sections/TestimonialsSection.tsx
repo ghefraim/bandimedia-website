@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { testimonialsData, type Testimonial } from '@/data/testimonialsData';
 import Image from 'next/image';
+import SectionTitle from '../ui/SectionTitle';
 export default function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
@@ -55,18 +56,7 @@ export default function TestimonialsSection() {
       <div className="relative z-10">
       <div className="box-border w-full px-5 md:px-10">
         <div className="box-border max-w-[1312px] w-full mx-auto">
-          <div className="items-center box-border flex flex-col justify-start text-center mb-12 md:mb-16">
-            <h2 className="text-black text-[32px] box-border leading-[35.2px] md:text-[64px] md:leading-[70.4px]">CE SPUN</h2>
-            <div className="relative inline-block">
-              <h2 className="relative text-black text-[32px] box-border leading-[35.2px] z-10 px-6 py-2 md:text-[64px] md:leading-[70.4px]">
-                CLIENȚII NOȘTRI
-              </h2>
-              <div 
-                className="absolute inset-0 bg-[var(--brand-yellow)] z-0"
-                style={{ transform: 'skewX(-15deg)' }}
-              ></div>
-            </div>
-          </div>
+          <SectionTitle title="CLIENȚII NOȘTRI" subtitle="CE SPUN" subtitleClassName="font-normal" titleClassName="font-normal" invertOrder={true} />
         </div>
       </div>
       

@@ -71,7 +71,7 @@ export default function AboutTeamSection() {
             title="ECHIPA CARE" 
             subtitle="FACE TOTUL POSIBIL" 
             align="center"
-            subtitleClassName="text-white"
+            subtitleClassName="text-white font-normal"
           />
         </div>
         
