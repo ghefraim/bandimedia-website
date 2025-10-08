@@ -60,7 +60,7 @@ export default function Footer() {
                           </div>
                         </div>
                       </div>
-                      <input type="submit" value="Abonează-te" className="text-gray-900 text-base font-bold bg-[var(--brand-yellow)] box-border block leading-6 text-center text-nowrap border border-[var(--brand-yellow)] px-5 py-2 rounded-[100px] border-solid md:text-lg md:leading-[27px] cursor-pointer hover:bg-yellow-500 transition-colors" />
+                      <input type="submit" value="Abonează-te" className="text-gray-900 text-base font-bold bg-[var(--brand-yellow)] box-border block leading-6 text-center text-nowrap px-5 py-2 rounded-[100px] border-solid md:text-lg md:leading-[27px] cursor-pointer hover:bg-yellow-500 transition-colors" />
                     </div>
                     <p className="mt-2 text-xs box-border leading-[18px]">Prin abonare ești de acord cu <Link href="/privacy-policy" className="text-[var(--brand-yellow)]">Politica noastră de Confidențialitate</Link> și consimți să primești actualizări de la compania noastră.</p>
                   </form>
@@ -115,7 +115,7 @@ export default function Footer() {
               </div>
             </div>
             <div className=" flex text-center w-full items-center box-border gap-x-8 flex-col-reverse justify-center gap-y-8 md:items-center md:gap-x-[normal] md:flex-row md:gap-y-[normal] md:mt-0">
-              <p className="mt-4 font-semibold text-center box-border">
+              <p className="mt-16 font-semibold text-center box-border">
                 © <strong className="font-bold box-border mt-2">{new Date().getFullYear()} BANDI MEDIA SRL</strong>
               </p>
           

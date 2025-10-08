@@ -16,7 +16,7 @@ export default function CTASection() {
               <p className="text-sm font-light box-border leading-[20px] text-left md:text-lg md:font-normal md:leading-[27px] md:text-right">
                   Ai o viziune? Tu vii cu ideea, noi venim cu strategii, content și rezultate. Vino să răsturnăm regulile și să rescriem povestea ta pe social media! Contactează-ne acum și o să ai parte de o analiză gratuită.
                 </p>
-              <Link href="/contact" className="text-gray-900 text-base font-bold bg-[var(--brand-yellow)] block leading-6 text-center px-5 py-2 rounded-[100px] md:text-lg md:leading-[27px] hover:bg-yellow-500 transition-colors">CONTACTEAZĂ-NE</Link>
+              <Link href="/contact" className="text-gray-900 text-base font-bold bg-[var(--brand-yellow)] block leading-6 text-center px-5 py-2 rounded-[100px] md:text-lg md:leading-[27px] hover:bg-yellow-500 transition-colors">Contactează-ne</Link>
             </div>
           </div>
         </div>
