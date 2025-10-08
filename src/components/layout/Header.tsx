@@ -25,21 +25,24 @@ export default function Header() {
                 ))}
               </div>
               <div className="items-stretch box-border flex flex-col justify-start min-h-0 min-w-0 md:[align-items:normal] md:block md:flex-row md:justify-normal md:min-h-[auto] md:min-w-[auto]">
-               <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] hover:bg-[var(--brand-yellow-hover)] text-black box-border block leading-6 text-center  px-5 py-2 rounded-[100px] font-poppins md:text-lg md:inline-block md:leading-[27px]">Contactează-ne</Link>
+               <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] hover:bg-[var(--brand-yellow-hover)] text-black box-border block leading-6 text-center  px-5 py-2 rounded-[100px] font-poppins md:text-lg md:inline-block md:leading-[27px]">
+                 <span className="md:hidden">Contact</span>
+                 <span className="hidden md:inline">Contactează-ne</span>
+               </Link>
               </div>
             </nav>
 
             {/* Mobile Menu Dropdown */}
-            <div className={`absolute top-full left-0 w-full bg-background/80 backdrop-blur-lg border-t border-white/10 shadow-xl z-[999] md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            <div className={`absolute top-full left-0 w-full bg-background border-t border-white/10 z-[999] md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
               isMobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
             }`}>
-              <div className="flex flex-col p-6 items-center">
-                <div className="flex flex-col gap-4  items-center">
+              <div className="p-4">
+                <div className="grid grid-cols-3 gap-2">
                   {navigationData.mainNav.map((item) => (
                     <Link 
                       key={item.id} 
                       href={item.href} 
-                      className="text-white text-lg font-poppins hover:text-[var(--brand-yellow)] transition-colors py-2 border-b border-gray-700 last:border-b-0 text-center"
+                      className="text-white text-sm font-poppins hover:text-[var(--brand-yellow)] transition-colors py-3 px-2 text-center rounded-lg hover:bg-white/5"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.label}
@@ -61,7 +64,10 @@ export default function Header() {
               </div>
             </div>
             <div className="items-stretch box-border flex flex-col justify-start min-h-[auto] min-w-[auto] md:[align-items:normal] md:hidden md:flex-row md:justify-normal md:min-h-0 md:min-w-0">
-            <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] hover:bg-[var(--brand-yellow-hover)] text-black box-border block leading-6 text-center  px-5 py-2 rounded-[100px] font-poppins md:text-lg md:inline-block md:leading-[27px]">Contactează-ne</Link>
+            <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] hover:bg-[var(--brand-yellow-hover)] text-black box-border block leading-6 text-center  px-3 py-2 rounded-[100px] font-poppins md:text-lg md:inline-block md:leading-[27px]">
+              <span className="md:hidden">Contact</span>
+              <span className="hidden md:inline">Contactează-ne</span>
+            </Link>
              
               {/* <Link href="/contact" className="text-base font-bold bg-[var(--brand-yellow)] box-border block leading-6 min-h-[auto] min-w-[auto] text-center border border-[var(--brand-yellow)] px-5 py-2 rounded-[100px] border-solid font-poppins md:text-lg md:inline-block md:leading-[27px] md:min-h-0 md:min-w-0">Contactează-ne</Link> */}
             </div>
