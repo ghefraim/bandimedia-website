@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
       </div>
       <div className="relative z-10">
       <div className="box-border w-full px-5 md:px-10">
-        <div className="box-border max-w-[1312px] w-full mx-auto">
+        <div className="box-border max-w-[1312px] w-full mx-auto mb-12 md:mb-16">
           <SectionTitle title="CLIENȚII NOȘTRI" subtitle="CE SPUN" subtitleClassName="font-normal" titleClassName="font-normal" invertOrder={true} />
         </div>
       </div>
