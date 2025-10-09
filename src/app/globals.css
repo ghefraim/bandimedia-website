@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: hsl(126, 46%, 8%);
+  --background: hsl(110, 100%, 1%); /* also change in body below */
   --foreground: #f9fafb;
   --border: 214.3 31.8% 91.4%;
   --input: 214.3 31.8% 91.4%;
@@ -27,7 +27,7 @@
 }
 
 body {
-  background: hsl(126, 46%, 8%);
+  background: hsl(126, 46%, 8%); /* also change in body below */
   color: #f9fafb; /* text-gray-50 */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 600; /* Semi-bold by default */
@@ -51,7 +51,7 @@ body {
 }
 
 body {
-  background: hsl(126, 46%, 8%);
+  background: hsl(110, 100%, 1%); /* also change in var(--background) above */
   color: #f9fafb; /* text-gray-50 */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 600; /* Semi-bold by default */
