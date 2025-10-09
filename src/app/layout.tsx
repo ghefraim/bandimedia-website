@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kalam.variable} antialiased text-gray-900 text-base font-semibold bg-gray-900 min-h-full font-helvetica`}
+        className={`${kalam.variable} antialiased text-gray-900 text-base font-semibold bg-background min-h-full font-helvetica`}
       >
         <div className="box-border">
           <main className="box-border">

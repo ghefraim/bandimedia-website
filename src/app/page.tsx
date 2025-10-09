@@ -50,6 +50,13 @@ export default function ComingSoon() {
           <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[600px] object-contain" width={400} height={600} />
           <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[600px] object-contain" width={400} height={600} />
           <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[600px] object-contain" width={400} height={600} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[600px] object-contain" width={400} height={600} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[600px] object-contain" width={400} height={600} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[600px] object-contain" width={400} height={600} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[600px] object-contain" width={400} height={600} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[600px] object-contain" width={400} height={600} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[600px] object-contain" width={400} height={600} />
+          <Image src="/B-outline.svg" alt="" className="h-full w-auto max-h-[600px] object-contain" width={400} height={600} />
         </div>
       </div>
 
